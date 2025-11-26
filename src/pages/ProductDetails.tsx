@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { products } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ShoppingCart, ArrowLeft, Check } from "lucide-react";
+import { ShoppingCart, ArrowLeft, Check, Minus, Plus } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
 
@@ -11,6 +12,7 @@ const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
   const { addToCart } = useCart();
   const product = products.find((p) => p.id === id);
+  const [quantity, setQuantity] = useState(1);
 
   if (!product) {
     return (
@@ -31,11 +33,15 @@ const ProductDetails = () => {
       name: product.name,
       category: product.category,
       image: product.image,
-    });
+    }, quantity);
     toast.success("Added to cart", {
-      description: product.name,
+      description: `${quantity}x ${product.name}`,
     });
+    setQuantity(1);
   };
+
+  const incrementQuantity = () => setQuantity((prev) => prev + 1);
+  const decrementQuantity = () => setQuantity((prev) => Math.max(1, prev - 1));
 
   return (
     <div className="min-h-screen bg-background py-12">
@@ -103,14 +109,38 @@ const ProductDetails = () => {
               </Card>
             )}
 
-            <div className="space-y-3">
+            <div className="space-y-4">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-lg mb-4">Quantity</h3>
+                  <div className="flex items-center justify-center space-x-4">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={decrementQuantity}
+                      disabled={quantity <= 1}
+                    >
+                      <Minus className="h-4 w-4" />
+                    </Button>
+                    <span className="text-2xl font-bold w-16 text-center">{quantity}</span>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={incrementQuantity}
+                    >
+                      <Plus className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
               <Button
                 onClick={handleAddToCart}
                 size="lg"
                 className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
               >
                 <ShoppingCart className="mr-2 h-5 w-5" />
-                Add to Cart
+                Add {quantity} to Cart
               </Button>
               <p className="text-sm text-muted-foreground text-center">
                 Contact us for pricing and availability
