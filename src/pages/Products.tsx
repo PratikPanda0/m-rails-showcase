@@ -3,14 +3,19 @@ import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import ProductCard from "@/components/ProductCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Input } from "@/components/ui/input";
+import { Search } from "lucide-react";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const filteredProducts =
-    selectedCategory === "all"
-      ? products
-      : products.filter((p) => p.category === selectedCategory);
+  const filteredProducts = products.filter((p) => {
+    const matchesCategory = selectedCategory === "all" || p.category === selectedCategory;
+    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         p.category.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <div className="min-h-screen bg-background py-12">
@@ -20,6 +25,19 @@ const Products = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Explore our extensive range of premium aluminum railing systems, brackets, spigots, handrails, and accessories
           </p>
+        </div>
+
+        <div className="max-w-md mx-auto mb-8">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="Search products..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10"
+            />
+          </div>
         </div>
 
         <Tabs defaultValue="all" className="w-full" onValueChange={setSelectedCategory}>
@@ -35,8 +53,8 @@ const Products = () => {
           </TabsList>
 
           <TabsContent value={selectedCategory} className="space-y-12">
-            {selectedCategory === "all" ? (
-              // Show by category when "all" is selected
+            {selectedCategory === "all" && !searchQuery ? (
+              // Show by category when "all" is selected and no search
               categories.map((category) => {
                 const categoryProducts = products.filter((p) => p.category === category);
                 return (
@@ -60,18 +78,24 @@ const Products = () => {
                 );
               })
             ) : (
-              // Show filtered products for specific category
+              // Show filtered products
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {filteredProducts.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    id={product.id}
-                    name={product.name}
-                    category={product.category}
-                    image={product.image}
-                    price={product.price}
-                  />
-                ))}
+                {filteredProducts.length > 0 ? (
+                  filteredProducts.map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      id={product.id}
+                      name={product.name}
+                      category={product.category}
+                      image={product.image}
+                      price={product.price}
+                    />
+                  ))
+                ) : (
+                  <div className="col-span-full text-center py-12">
+                    <p className="text-muted-foreground">No products found matching your search.</p>
+                  </div>
+                )}
               </div>
             )}
           </TabsContent>
