@@ -6,8 +6,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
+import { useCart } from "@/contexts/CartContext";
 
 const Contact = () => {
+  const { cart } = useCart();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,6 +19,20 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const submissionData = {
+      formData: {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message
+      },
+      cartItems: cart,
+      timestamp: new Date().toISOString()
+    };
+    
+    console.log("Contact Form Submission:", JSON.stringify(submissionData, null, 2));
+    
     toast.success("Message sent successfully!", {
       description: "We'll get back to you soon.",
     });
