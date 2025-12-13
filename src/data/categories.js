@@ -1,7 +1,18 @@
 export const categories = [
-  "Aluminium Railing Systems",
-  "Railing Spigot",
-  "Bracket",
-  "Aluminium Handrails",
-  "Accessories"
+  {
+    name: "Aluminium Handrails",
+    subcategories: null
+  },
+  {
+    name: "Aluminium Railing System",
+    subcategories: ["Bracket Systems", "Bracket With Cover Systems", "Continuous Systems"]
+  },
+  {
+    name: "Bracket",
+    subcategories: null
+  },
+  {
+    name: "Railing Spigot",
+    subcategories: null
+  }
 ];
