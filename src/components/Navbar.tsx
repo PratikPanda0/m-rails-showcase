@@ -21,9 +21,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            {/* <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               M-RAILS
-            </div>
+            </div> */}
+            <img className="logo" src="/M-RAILS-Logo.jpg" alt="M-Rails Logo" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,7 +42,7 @@ const Navbar = () => {
 
           {/* Cart & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Link to="/cart">
+            {/* <Link to="/cart">
               <Button variant="outline" size="icon" className="relative">
                 <ShoppingCart className="h-5 w-5" />
                 {getCartCount() > 0 && (
@@ -50,7 +51,7 @@ const Navbar = () => {
                   </span>
                 )}
               </Button>
-            </Link>
+            </Link> */}
 
             {/* Mobile Menu Button */}
             <Button
