@@ -63,7 +63,7 @@ const Products = () => {
           </div>
         </div>
 
-        <Tabs value={selectedCategory} className="w-full" onValueChange={handleCategoryChange}>
+        <Tabs value={selectedCategory} className="w-full" onValueChange={handleCategoryChange} defaultValue="all">
           <TabsList className="w-full justify-start overflow-x-auto flex-wrap h-auto mb-8">
             <TabsTrigger value="all" className="flex-shrink-0">
               All Products
@@ -130,7 +130,7 @@ const Products = () => {
             </div>
           )}
 
-          <TabsContent value={selectedCategory} className="space-y-12">
+          <div className="space-y-12">
             {selectedCategory === "all" && !searchQuery ? (
               // Show by category when "all" is selected and no search
               categories.map((category) => {
@@ -176,7 +176,7 @@ const Products = () => {
                 )}
               </div>
             )}
-          </TabsContent>
+          </div>
         </Tabs>
       </div>
     </div>
