@@ -71,8 +71,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Location</h3>
                     <p className="text-muted-foreground text-sm">
-                      ANUGRAH METAL<br />
-                      India
+                      Shed no -4, Survey No-35, Plot No-6, Behind Tata showroom, Vavdi, Rajkot, Rajkot, Gujarat, 360004
                     </p>
                   </div>
                 </div>
@@ -84,7 +83,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                     <p className="text-muted-foreground text-sm">
-                      +91 XXX XXX XXXX<br />
+                      +91 942 724 8004<br />
+                      +91 760 000 0775<br />
                       Customer Care Available
                     </p>
                   </div>
@@ -97,10 +97,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <a
-                      href="mailto:info@mrails.in"
+                      href="mailto:mrails.sales@gmail.com"
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
-                      info@mrails.in
+                      mrails.sales@gmail.com
                     </a>
                   </div>
                 </div>

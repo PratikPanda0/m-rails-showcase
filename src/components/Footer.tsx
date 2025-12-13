@@ -62,17 +62,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <p className="text-muted-foreground text-sm">
-                  ANUGRAH METAL, India
+                  Shed no -4, Survey No-35, Plot No-6, Behind Tata showroom, Vavdi, Rajkot, Rajkot, Gujarat, 360004 
                 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <p className="text-muted-foreground text-sm">+91 XXX XXX XXXX</p>
+                <p className="text-muted-foreground text-sm">+91 942 724 8004</p>
+                <p className="text-muted-foreground text-sm">+91 760 000 0775</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@mrails.in" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                  info@mrails.in
+                <a href="mailto:mrails.sales@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                  mrails.sales@gmail.com
                 </a>
               </div>
             </div>
