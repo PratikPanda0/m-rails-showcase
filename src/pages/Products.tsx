@@ -93,18 +93,21 @@ const Products = () => {
                     >
                       All {category.name}
                     </DropdownMenuItem>
-                    {category.subcategories.map((sub) => (
-                      <DropdownMenuItem
-                        key={sub}
-                        onClick={() => {
-                          setSelectedCategory(category.name);
-                          handleSubcategorySelect(sub);
-                        }}
-                        className="cursor-pointer"
-                      >
-                        {sub}
-                      </DropdownMenuItem>
-                    ))}
+                    {category.subcategories.map((sub) => {
+                      const subName = typeof sub === 'string' ? sub : (sub as { name: string }).name;
+                      return (
+                        <DropdownMenuItem
+                          key={subName}
+                          onClick={() => {
+                            setSelectedCategory(category.name);
+                            handleSubcategorySelect(subName);
+                          }}
+                          className="cursor-pointer"
+                        >
+                          {subName}
+                        </DropdownMenuItem>
+                      );
+                    })}
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
