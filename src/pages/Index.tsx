@@ -64,7 +64,7 @@ const Index = () => {
                 <Card className="group hover:shadow-steel transition-all duration-300 cursor-pointer">
                   <CardContent className="p-6">
                     <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                      {category}
+                      {category.name}
                     </h3>
                   </CardContent>
                 </Card>
