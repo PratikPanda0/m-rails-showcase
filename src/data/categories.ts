@@ -1,4 +1,9 @@
-export const categories = [
+export interface Category {
+  name: string;
+  subcategories: string[] | null;
+}
+
+export const categories: Category[] = [
   {
     name: "Aluminium Handrails",
     subcategories: null
