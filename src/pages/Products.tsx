@@ -2,9 +2,9 @@ import { useState } from "react";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import ProductCard from "@/components/ProductCard";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Search, ChevronDown } from "lucide-react";
-import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,8 +17,8 @@ const Products = () => {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const handleCategorySelect = (categoryName: string) => {
-    setSelectedCategory(categoryName);
+  const handleCategoryChange = (value: string) => {
+    setSelectedCategory(value);
     setSelectedSubcategory(null);
   };
 
@@ -63,141 +63,121 @@ const Products = () => {
           </div>
         </div>
 
-        {/* Category Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {/* All Products Tab */}
-          <button
-            onClick={() => handleCategorySelect("all")}
-            className={cn(
-              "px-4 py-2 rounded-md text-sm font-medium transition-colors",
-              selectedCategory === "all"
-                ? "bg-primary text-primary-foreground"
-                : "bg-muted text-muted-foreground hover:bg-muted/80"
-            )}
-          >
-            All Products
-          </button>
-
-          {/* Category Tabs */}
-          {categories.map((category) => (
-            category.subcategories ? (
-              <DropdownMenu key={category.name}>
-                <DropdownMenuTrigger asChild>
-                  <button
-                    className={cn(
-                      "px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1",
-                      selectedCategory === category.name
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-muted text-muted-foreground hover:bg-muted/80"
-                    )}
-                  >
-                    {category.name}
-                    <ChevronDown className="h-4 w-4" />
-                  </button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-background border border-border z-50">
-                  <DropdownMenuItem
-                    onClick={() => {
-                      handleCategorySelect(category.name);
-                    }}
-                    className="cursor-pointer"
-                  >
-                    All {category.name}
-                  </DropdownMenuItem>
-                  {category.subcategories.map((sub) => (
+        <Tabs value={selectedCategory} className="w-full" onValueChange={handleCategoryChange}>
+          <TabsList className="w-full justify-start overflow-x-auto flex-wrap h-auto mb-8">
+            <TabsTrigger value="all" className="flex-shrink-0">
+              All Products
+            </TabsTrigger>
+            {categories.map((category) => (
+              category.subcategories ? (
+                <DropdownMenu key={category.name}>
+                  <DropdownMenuTrigger asChild>
+                    <button
+                      onClick={() => handleCategoryChange(category.name)}
+                      className={`flex-shrink-0 inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${
+                        selectedCategory === category.name
+                          ? "bg-background text-foreground shadow"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {category.name}
+                      <ChevronDown className="h-4 w-4 ml-1" />
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="bg-background border border-border z-50">
                     <DropdownMenuItem
-                      key={sub}
                       onClick={() => {
-                        setSelectedCategory(category.name);
-                        handleSubcategorySelect(sub);
+                        handleCategoryChange(category.name);
                       }}
                       className="cursor-pointer"
                     >
-                      {sub}
+                      All {category.name}
                     </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <button
-                key={category.name}
-                onClick={() => handleCategorySelect(category.name)}
-                className={cn(
-                  "px-4 py-2 rounded-md text-sm font-medium transition-colors",
-                  selectedCategory === category.name
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                )}
-              >
-                {category.name}
-              </button>
-            )
-          ))}
-        </div>
-
-        {/* Subcategory indicator */}
-        {selectedSubcategory && (
-          <div className="text-center mb-6">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">
-              {selectedSubcategory}
-              <button
-                onClick={() => setSelectedSubcategory(null)}
-                className="hover:text-primary/80"
-              >
-                ×
-              </button>
-            </span>
-          </div>
-        )}
-
-        {/* Products Display */}
-        <div className="space-y-12">
-          {selectedCategory === "all" && !searchQuery && !selectedSubcategory ? (
-            // Show by category when "all" is selected and no search
-            categories.map((category) => {
-              const categoryProducts = products.filter((p) => p.category === category.name);
-              return (
-                <div key={category.name} className="space-y-6">
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground border-b border-border pb-2">
-                    {category.name}
-                  </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {categoryProducts.map((product) => (
-                      <ProductCard
-                        key={product.id}
-                        id={product.id}
-                        name={product.name}
-                        category={product.category}
-                        image={product.image}
-                        price={product.price}
-                      />
+                    {category.subcategories.map((sub) => (
+                      <DropdownMenuItem
+                        key={sub}
+                        onClick={() => {
+                          setSelectedCategory(category.name);
+                          handleSubcategorySelect(sub);
+                        }}
+                        className="cursor-pointer"
+                      >
+                        {sub}
+                      </DropdownMenuItem>
                     ))}
-                  </div>
-                </div>
-              );
-            })
-          ) : (
-            // Show filtered products
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {filteredProducts.length > 0 ? (
-                filteredProducts.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    id={product.id}
-                    name={product.name}
-                    category={product.category}
-                    image={product.image}
-                    price={product.price}
-                  />
-                ))
+                  </DropdownMenuContent>
+                </DropdownMenu>
               ) : (
-                <div className="col-span-full text-center py-12">
-                  <p className="text-muted-foreground">No products found matching your search.</p>
-                </div>
-              )}
+                <TabsTrigger key={category.name} value={category.name} className="flex-shrink-0">
+                  {category.name}
+                </TabsTrigger>
+              )
+            ))}
+          </TabsList>
+
+          {/* Subcategory indicator */}
+          {selectedSubcategory && (
+            <div className="mb-6">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">
+                {selectedSubcategory}
+                <button
+                  onClick={() => setSelectedSubcategory(null)}
+                  className="hover:text-primary/80"
+                >
+                  ×
+                </button>
+              </span>
             </div>
           )}
-        </div>
+
+          <TabsContent value={selectedCategory} className="space-y-12">
+            {selectedCategory === "all" && !searchQuery ? (
+              // Show by category when "all" is selected and no search
+              categories.map((category) => {
+                const categoryProducts = products.filter((p) => p.category === category.name);
+                return (
+                  <div key={category.name} className="space-y-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-foreground border-b border-border pb-2">
+                      {category.name}
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                      {categoryProducts.map((product) => (
+                        <ProductCard
+                          key={product.id}
+                          id={product.id}
+                          name={product.name}
+                          category={product.category}
+                          image={product.image}
+                          price={product.price}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              // Show filtered products
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {filteredProducts.length > 0 ? (
+                  filteredProducts.map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      id={product.id}
+                      name={product.name}
+                      category={product.category}
+                      image={product.image}
+                      price={product.price}
+                    />
+                  ))
+                ) : (
+                  <div className="col-span-full text-center py-12">
+                    <p className="text-muted-foreground">No products found matching your search.</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
