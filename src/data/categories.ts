@@ -19,5 +19,9 @@ export const categories: Category[] = [
   {
     name: "Railing Spigot",
     subcategories: null
+  },
+  {
+    name: "Accessories",
+    subcategories: null
   }
 ];
