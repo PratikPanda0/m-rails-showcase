@@ -368,7 +368,7 @@ export const products = [
     pageNumber: "33",
     price: "",
     description: "Pyramid Bracket with distinctive pyramidal design. Combines structural strength with contemporary aesthetic appeal.",
-    image: "/images/products/Bracket/MRL-33 Pyramid Bracket.png",
+    image: "/images/products/Bracket/MRL-33 Pyramid Bracket.jpg",
     features: ["Pyramid Design", "Structural Strength", "Modern Look", "Premium Finish"]
   },
   {
