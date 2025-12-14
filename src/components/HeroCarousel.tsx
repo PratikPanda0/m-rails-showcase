@@ -4,35 +4,41 @@ import { Button } from "@/components/ui/button";
 
 const carouselImages = [
   {
-    url: "/images/hero/hero-1.jpg",
+    url: "/public/images/Front/R-1.jpg",
     alt: "M-RAILS Aluminium Railing Systems",
     title: "Premium Aluminium Railing Systems",
-    subtitle: "Quality, Safety, and Elegance Combined"
+    subtitle: "Discover premium audio gear"
   },
   {
-    url: "/images/hero/hero-2.jpg",
+    url: "/public/images/Front/MRL-01_.jpg",
     alt: "Modern Railing Solutions",
     title: "Innovative Design Solutions",
-    subtitle: "35+ Aluminium Railing Options"
+    subtitle: "Bring music to life with style"
   },
   {
-    url: "/images/hero/hero-3.jpg",
+    url: "/public/images/Front/R-2.jpg",
     alt: "Weather Proof Systems",
     title: "100% Weather Proof",
-    subtitle: "Built to Last in Any Climate"
+    subtitle: "Illuminate your world creatively"
   },
   {
-    url: "/images/hero/hero-4.jpg",
+    url: "/public/images/Front/MRL-02_.jpg",
     alt: "Easy Installation",
     title: "Easy Installation",
-    subtitle: "Professional-Grade Quality, Simple Setup"
+    subtitle: "Bring music to life with style"
   },
   {
-    url: "/images/hero/hero-5.jpg",
+    url: "/public/images/Front/R-3.jpg",
     alt: "Multiple Finish Options",
     title: "Multi-Color Options",
-    subtitle: "PVDF, Wood, Anodizing & Powder Coating"
-  }
+    subtitle: "Illuminate your world creatively"
+  },
+  {
+    url: "/public/images/Front/MRL-03_.jpg",
+    alt: "Easy Installation",
+    title: "Easy Installation",
+    subtitle: "Bring music to life with style"
+  },
 ];
 
 const HeroCarousel = () => {
