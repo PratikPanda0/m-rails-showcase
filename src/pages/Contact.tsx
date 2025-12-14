@@ -140,8 +140,8 @@ const Contact = () => {
 
       {/* Contact Form Section with Map */}
       <div className="bg-muted py-16">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Google Map */}
             <div className="h-[500px] lg:h-auto min-h-[400px] rounded-lg overflow-hidden shadow-lg">
               <iframe
