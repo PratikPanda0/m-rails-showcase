@@ -4,40 +4,40 @@ import { Button } from "@/components/ui/button";
 
 const carouselImages = [
   {
-    url: "/public/images/Front/R-1.jpg",
+    url: "/images/Front/R-1.jpg",
     alt: "M-RAILS Aluminium Railing Systems",
     title: "Premium Aluminium Railing Systems",
-    subtitle: "Discover premium audio gear"
+    subtitle: "Quality, Safety, and Elegance Combined"
   },
   {
-    url: "/public/images/Front/MRL-01_.jpg",
+    url: "/images/Front/MRL-01_.jpg",
     alt: "Modern Railing Solutions",
     title: "Innovative Design Solutions",
-    subtitle: "Bring music to life with style"
+    subtitle: "35+ Aluminium Railing Options"
   },
   {
-    url: "/public/images/Front/R-2.jpg",
+    url: "/images/Front/R-2.jpg",
     alt: "Weather Proof Systems",
     title: "100% Weather Proof",
-    subtitle: "Illuminate your world creatively"
+    subtitle: "Built to Last in Any Climate"
   },
   {
-    url: "/public/images/Front/MRL-02_.jpg",
+    url: "/images/Front/MRL-02_.jpg",
     alt: "Easy Installation",
     title: "Easy Installation",
-    subtitle: "Bring music to life with style"
+    subtitle: "Professional-Grade Quality, Simple Setup"
   },
   {
-    url: "/public/images/Front/R-3.jpg",
+    url: "/images/Front/R-3.jpg",
     alt: "Multiple Finish Options",
     title: "Multi-Color Options",
-    subtitle: "Illuminate your world creatively"
+    subtitle: "PVDF, Wood, Anodizing & Powder Coating"
   },
   {
-    url: "/public/images/Front/MRL-03_.jpg",
-    alt: "Easy Installation",
-    title: "Easy Installation",
-    subtitle: "Bring music to life with style"
+    url: "/images/Front/MRL-03_.jpg",
+    alt: "Durable Construction",
+    title: "Durable Construction",
+    subtitle: "Premium Quality Aluminium Systems"
   },
 ];
 
