@@ -1,19 +1,22 @@
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Mail, Phone, MapPin, Send, Building2, Factory } from "lucide-react";
 import { toast } from "sonner";
 import { useCart } from "@/contexts/CartContext";
 
 const Contact = () => {
   const { cart } = useCart();
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
     email: "",
+    city: "",
     phone: "",
+    profession: "",
     message: ""
   });
 
@@ -22,9 +25,11 @@ const Contact = () => {
     
     const submissionData = {
       formData: {
-        name: formData.name,
+        firstName: formData.firstName,
         email: formData.email,
+        city: formData.city,
         phone: formData.phone,
+        profession: formData.profession,
         message: formData.message
       },
       cartItems: cart,
@@ -36,7 +41,7 @@ const Contact = () => {
     toast.success("Message sent successfully!", {
       description: "We'll get back to you soon.",
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({ firstName: "", email: "", city: "", phone: "", profession: "", message: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -46,117 +51,144 @@ const Contact = () => {
     }));
   };
 
+  const handleSelectChange = (value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      profession: value
+    }));
+  };
+
   return (
-    <div className="min-h-screen bg-background py-12">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-12 space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground">Contact Us</h1>
-          <p className="text-xl text-muted-foreground">
-            Get in touch with us for any inquiries about our products and services
-          </p>
+    <div className="min-h-screen bg-background">
+      {/* Hero Banner */}
+      <div 
+        className="relative h-[400px] md:h-[500px] bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/Front/R-2.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide">
+            Contact Us
+          </h1>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Get In Touch</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-                    <MapPin className="h-5 w-5 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Shed no -4, Survey No-35, Plot No-6, Behind Tata showroom, Vavdi, Rajkot, Rajkot, Gujarat, 360004
-                    </p>
-                  </div>
+      {/* Intro Section */}
+      <div className="container mx-auto px-4 py-16 max-w-4xl text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          M-RAILS Located...
+        </h2>
+        <p className="text-muted-foreground text-lg leading-relaxed">
+          Tell us about your project ideas or just say hello. Whether you've got a big idea or need some inspiration with a building project, we are here to create perfect railing solutions. From concept to creation, let us inspire you.
+        </p>
+      </div>
+
+      {/* Address Cards */}
+      <div className="container mx-auto px-4 pb-16 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Corporate Office */}
+          <Card className="border-t-4 border-t-primary">
+            <CardContent className="pt-8 pb-6 px-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Building2 className="h-6 w-6 text-primary" />
+                <h3 className="text-xl font-bold text-foreground">Corporate Office</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Shed no -4, Survey No-35, Plot No-6, Behind Tata showroom, Vavdi, Rajkot, Gujarat, 360004
+              </p>
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>+91 942 724 8004</span>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-                    <Phone className="h-5 w-5 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <p className="text-muted-foreground text-sm">
-                      +91 942 724 8004<br />
-                      +91 760 000 0775<br />
-                      Customer Care Available
-                    </p>
-                  </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Mail className="h-4 w-4 text-primary" />
+                  <a href="mailto:mrails.sales@gmail.com" className="hover:text-primary transition-colors">
+                    mrails.sales@gmail.com
+                  </a>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a
-                      href="mailto:mrails.sales@gmail.com"
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
-                      mrails.sales@gmail.com
-                    </a>
-                  </div>
+          {/* Factory Address */}
+          <Card className="border-t-4 border-t-primary">
+            <CardContent className="pt-8 pb-6 px-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Factory className="h-6 w-6 text-primary" />
+                <h3 className="text-xl font-bold text-foreground">Factory Address</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Shed no -4, Survey No-35, Plot No-6, Behind Tata showroom, Vavdi, Rajkot, Gujarat, 360004
+              </p>
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>+91 760 000 0775</span>
                 </div>
-
-                <div className="pt-6 border-t border-border">
-                  <h3 className="font-semibold text-foreground mb-2">Website</h3>
-                  <a
-                    href="http://www.mrails.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <MapPin className="h-4 w-4 text-primary" />
+                  <a href="http://www.mrails.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     www.mrails.in
                   </a>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
 
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card>
-              <CardHeader>
-                <CardTitle>Send Us a Message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Your name"
-                        required
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="your.email@example.com"
-                        required
-                      />
-                    </div>
+      {/* Contact Form Section */}
+      <div className="bg-muted py-16">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Card>
+            <CardContent className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="firstName">First Name *</Label>
+                    <Input
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      placeholder="Your name"
+                      required
+                      className="bg-background"
+                    />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone</Label>
+                    <Label htmlFor="email">Email Address *</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="your.email@example.com"
+                      required
+                      className="bg-background"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="city">City *</Label>
+                    <Input
+                      id="city"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleChange}
+                      placeholder="Your city"
+                      required
+                      className="bg-background"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Phone Number *</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -164,30 +196,52 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+91 XXX XXX XXXX"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell us about your requirements..."
-                      rows={6}
                       required
+                      className="bg-background"
                     />
                   </div>
+                </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-gradient-primary">
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+                <div className="space-y-2">
+                  <Label htmlFor="profession">Profession *</Label>
+                  <Select value={formData.profession} onValueChange={handleSelectChange} required>
+                    <SelectTrigger className="bg-background">
+                      <SelectValue placeholder="Select your profession" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="architect">Architect</SelectItem>
+                      <SelectItem value="dealer">Dealer</SelectItem>
+                      <SelectItem value="consultant">Consultant</SelectItem>
+                      <SelectItem value="builder">Builder</SelectItem>
+                      <SelectItem value="end-user">End User</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Tell us about your requirements..."
+                    rows={5}
+                    maxLength={180}
+                    className="bg-background resize-none"
+                  />
+                  <p className="text-xs text-muted-foreground text-right">
+                    {formData.message.length} / 180
+                  </p>
+                </div>
+
+                <Button type="submit" size="lg" className="w-full md:w-auto bg-primary hover:bg-primary/90">
+                  <Send className="mr-2 h-5 w-5" />
+                  Send Message
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
