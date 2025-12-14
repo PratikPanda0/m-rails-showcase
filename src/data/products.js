@@ -779,5 +779,117 @@ export const products = [
     description: "Premium aluminum handrail with integrated mounting system. Complete solution for professional installations.",
     image: "/images/products/Aluminium Handrails/MRH-32.jpg",
     features: ["Integrated Mount", "Weather Resistant", "Multiple Finishes", "Complete System"]
+  },
+
+  // Accessories (MRHA-01 to MRHA-10)
+  {
+    id: "mrha-01",
+    name: "MRHA-01 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "01",
+    price: "",
+    description: "Premium railing accessory for enhanced installation. Compatible with all M-RAILS railing systems.",
+    image: "/images/products/Accessories/MRHA-01.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-02",
+    name: "MRHA-02 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "02",
+    price: "",
+    description: "Essential railing accessory component. Designed for seamless integration with M-RAILS products.",
+    image: "/images/products/Accessories/MRHA-02.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-03",
+    name: "MRHA-03 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "03",
+    price: "",
+    description: "Functional railing accessory for complete installations. Ensures professional finish and durability.",
+    image: "/images/products/Accessories/MRHA-03.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-04",
+    name: "MRHA-04 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "04",
+    price: "",
+    description: "Quality railing accessory for enhanced system performance. Built for long-lasting reliability.",
+    image: "/images/products/Accessories/MRHA-04.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-05",
+    name: "MRHA-05 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "05",
+    price: "",
+    description: "Specialized railing accessory for specific installation requirements. High-quality aluminum construction.",
+    image: "/images/products/Accessories/MRHA-05.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-06",
+    name: "MRHA-06 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "06",
+    price: "",
+    description: "Versatile railing accessory component. Compatible with multiple railing system configurations.",
+    image: "/images/products/Accessories/MRHA-06.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-07",
+    name: "MRHA-07 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "07",
+    price: "",
+    description: "Professional-grade railing accessory. Engineered for optimal performance and aesthetics.",
+    image: "/images/products/Accessories/MRHA-07.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-08",
+    name: "MRHA-08 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "08",
+    price: "",
+    description: "Essential mounting accessory for railing systems. Ensures secure and stable installations.",
+    image: "/images/products/Accessories/MRHA-08.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-09",
+    name: "MRHA-09 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "09",
+    price: "",
+    description: "Finishing accessory for railing installations. Provides clean and polished look to completed systems.",
+    image: "/images/products/Accessories/MRHA-09.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+  },
+  {
+    id: "mrha-10",
+    name: "MRHA-10 Railing Accessory",
+    category: "Accessories",
+    subcategory: null,
+    pageNumber: "10",
+    price: "",
+    description: "Premium finishing accessory for complete railing solutions. Matches all M-RAILS finish options.",
+    image: "/images/products/Accessories/MRHA-10_.jpg",
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
   }
 ];
