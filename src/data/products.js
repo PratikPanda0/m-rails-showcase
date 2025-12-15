@@ -784,7 +784,7 @@ export const products = [
   // Accessories (MRHA-01 to MRHA-10)
   {
     id: "mrha-01",
-    name: "MRHA-01 Railing Accessory",
+    name: "MRHA-01 L Connectors for Plain Handrails",
     category: "Accessories",
     subcategory: null,
     pageNumber: "01",
@@ -795,7 +795,7 @@ export const products = [
   },
   {
     id: "mrha-02",
-    name: "MRHA-02 Railing Accessory",
+    name: "MRHA-02 L Connectors for Plain Handrails",
     category: "Accessories",
     subcategory: null,
     pageNumber: "02",
@@ -806,7 +806,7 @@ export const products = [
   },
   {
     id: "mrha-03",
-    name: "MRHA-03 Railing Accessory",
+    name: "MRHA-03 L Connectors for Plain Handrails",
     category: "Accessories",
     subcategory: null,
     pageNumber: "03",
@@ -817,7 +817,7 @@ export const products = [
   },
   {
     id: "mrha-04",
-    name: "MRHA-04 Railing Accessory",
+    name: "MRHA-04 L Connectors for Plain Handrails",
     category: "Accessories",
     subcategory: null,
     pageNumber: "04",
@@ -828,7 +828,7 @@ export const products = [
   },
   {
     id: "mrha-05",
-    name: "MRHA-05 Railing Accessory",
+    name: "MRHA-05 L Connectors for Wall Mount",
     category: "Accessories",
     subcategory: null,
     pageNumber: "05",
@@ -839,7 +839,7 @@ export const products = [
   },
   {
     id: "mrha-06",
-    name: "MRHA-06 Railing Accessory",
+    name: "MRHA-06 L Connectors for Wall Mount",
     category: "Accessories",
     subcategory: null,
     pageNumber: "06",
@@ -850,7 +850,7 @@ export const products = [
   },
   {
     id: "mrha-07",
-    name: "MRHA-07 Railing Accessory",
+    name: "MRHA-07 L Connectors for Wall Mount",
     category: "Accessories",
     subcategory: null,
     pageNumber: "07",
@@ -861,7 +861,7 @@ export const products = [
   },
   {
     id: "mrha-08",
-    name: "MRHA-08 Railing Accessory",
+    name: "MRHA-08 L Connectors for Wall Mount",
     category: "Accessories",
     subcategory: null,
     pageNumber: "08",
@@ -872,7 +872,7 @@ export const products = [
   },
   {
     id: "mrha-09",
-    name: "MRHA-09 Railing Accessory",
+    name: "MRHA-09 Glass to Glass Straight Connector",
     category: "Accessories",
     subcategory: null,
     pageNumber: "09",
@@ -883,7 +883,7 @@ export const products = [
   },
   {
     id: "mrha-10",
-    name: "MRHA-10 Railing Accessory",
+    name: "MRHA-10 Glass to Glass L-Connector",
     category: "Accessories",
     subcategory: null,
     pageNumber: "10",
