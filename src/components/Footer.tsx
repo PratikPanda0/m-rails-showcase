@@ -48,9 +48,9 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground">Categories</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>Aluminium Railing Systems</li>
-              <li>Railing Spigot</li>
               <li>Brackets</li>
               <li>Aluminium Handrails</li>
+              <li>Railing Spigot</li>
               <li>Accessories</li>
             </ul>
           </div>
