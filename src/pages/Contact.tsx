@@ -11,10 +11,21 @@ import { useCart } from "@/contexts/CartContext";
 
 const Contact = () => {
   const { cart } = useCart();
+  const indianStates = [
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+    "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
+    "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+    "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+    "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu",
+    "Delhi", "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry"
+  ];
+
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
     city: "",
+    state: "",
     phone: "",
     profession: "",
     message: ""
@@ -28,6 +39,7 @@ const Contact = () => {
         firstName: formData.firstName,
         email: formData.email,
         city: formData.city,
+        state: formData.state,
         phone: formData.phone,
         profession: formData.profession,
         message: formData.message
@@ -41,7 +53,7 @@ const Contact = () => {
     toast.success("Message sent successfully!", {
       description: "We'll get back to you soon.",
     });
-    setFormData({ firstName: "", email: "", city: "", phone: "", profession: "", message: "" });
+    setFormData({ firstName: "", email: "", city: "", state: "", phone: "", profession: "", message: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -51,10 +63,10 @@ const Contact = () => {
     }));
   };
 
-  const handleSelectChange = (value: string) => {
+  const handleSelectChange = (field: string, value: string) => {
     setFormData((prev) => ({
       ...prev,
-      profession: value
+      [field]: value
     }));
   };
 
@@ -205,23 +217,39 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number *</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="+91 XXX XXX XXXX"
-                        required
-                        className="bg-background"
-                      />
+                      <Label htmlFor="state">State *</Label>
+                      <Select value={formData.state} onValueChange={(value) => handleSelectChange("state", value)} required>
+                        <SelectTrigger className="bg-background">
+                          <SelectValue placeholder="Select your state" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {indianStates.map((state) => (
+                            <SelectItem key={state} value={state.toLowerCase().replace(/\s+/g, "-")}>
+                              {state}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                     </div>
                   </div>
 
                   <div className="space-y-2">
+                    <Label htmlFor="phone">Phone Number *</Label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="+91 XXX XXX XXXX"
+                      required
+                      className="bg-background"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
                     <Label htmlFor="profession">Profession *</Label>
-                    <Select value={formData.profession} onValueChange={handleSelectChange} required>
+                    <Select value={formData.profession} onValueChange={(value) => handleSelectChange("profession", value)} required>
                       <SelectTrigger className="bg-background">
                         <SelectValue placeholder="Select your profession" />
                       </SelectTrigger>
