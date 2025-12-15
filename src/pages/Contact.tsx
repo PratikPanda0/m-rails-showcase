@@ -85,9 +85,9 @@ const Contact = () => {
 
       {/* Address Cards */}
       <div className="container mx-auto px-4 pb-16 max-w-5xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex justify-center items-center gap-8">
           {/* Corporate Office */}
-          <Card className="border-t-4 border-t-primary">
+          <Card className="border-t-4 border-t-primary hidden mx-auto">
             <CardContent className="pt-8 pb-6 px-6">
               <div className="flex items-center gap-3 mb-4">
                 <Building2 className="h-6 w-6 text-primary" />
@@ -112,7 +112,7 @@ const Contact = () => {
           </Card>
 
           {/* Factory Address */}
-          <Card className="border-t-4 border-t-primary">
+          <Card className="border-t-4 border-t-primary mx-auto">
             <CardContent className="pt-8 pb-6 px-6">
               <div className="flex items-center gap-3 mb-4">
                 <Factory className="h-6 w-6 text-primary" />
