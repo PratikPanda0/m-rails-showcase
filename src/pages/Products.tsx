@@ -41,7 +41,7 @@ const Products = () => {
   const railingSystemCategory = getCategoryWithSubcategories("Aluminium Railing System");
 
   return (
-    <div className="min-h-screen bg-background py-12">
+    <div className="min-h-screen bg-background py-2">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">Our Products</h1>

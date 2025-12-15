@@ -106,6 +106,6 @@ All colors MUST be HSL.
 
 
 .logo{
-    height: 3rem;
+    height: auto;
     width: auto;
 }
