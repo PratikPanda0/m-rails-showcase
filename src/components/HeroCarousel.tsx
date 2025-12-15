@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -43,20 +43,36 @@ const carouselImages = [
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [previousSlide, setPreviousSlide] = useState<number | null>(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const changeSlide = (newSlide: number) => {
+    if (isAnimating || newSlide === currentSlide) return;
+    setIsAnimating(true);
+    setPreviousSlide(currentSlide);
+    setCurrentSlide(newSlide);
+    setTimeout(() => {
+      setPreviousSlide(null);
+      setIsAnimating(false);
+    }, 600);
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+      const nextSlide = (currentSlide + 1) % carouselImages.length;
+      changeSlide(nextSlide);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [currentSlide, isAnimating]);
 
   const goToPrevious = () => {
-    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+    const prevSlide = (currentSlide - 1 + carouselImages.length) % carouselImages.length;
+    changeSlide(prevSlide);
   };
 
   const goToNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+    const nextSlide = (currentSlide + 1) % carouselImages.length;
+    changeSlide(nextSlide);
   };
 
   return (
@@ -70,19 +86,47 @@ const HeroCarousel = () => {
           }`}
         >
           <div
-            className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-muted"
+            className="absolute inset-0 bg-cover bg-center bg-muted"
             style={{ backgroundImage: `url(${image.url})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
           <div className="relative h-full flex items-center">
             <div className="container mx-auto px-4">
               <div className="max-w-2xl space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold text-foreground animate-fade-in">
-                  {image.title}
-                </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground animate-fade-in">
-                  {image.subtitle}
-                </p>
+                {index === currentSlide && (
+                  <>
+                    <h1 
+                      key={`title-${index}-${currentSlide}`}
+                      className="text-4xl md:text-6xl font-bold text-foreground animate-slide-up-fade-in"
+                    >
+                      {image.title}
+                    </h1>
+                    <p 
+                      key={`subtitle-${index}-${currentSlide}`}
+                      className="text-xl md:text-2xl text-muted-foreground animate-slide-up-fade-in"
+                      style={{ animationDelay: "0.15s" }}
+                    >
+                      {image.subtitle}
+                    </p>
+                  </>
+                )}
+                {index === previousSlide && (
+                  <>
+                    <h1 
+                      key={`title-out-${index}`}
+                      className="text-4xl md:text-6xl font-bold text-foreground animate-slide-down-fade-out"
+                    >
+                      {image.title}
+                    </h1>
+                    <p 
+                      key={`subtitle-out-${index}`}
+                      className="text-xl md:text-2xl text-muted-foreground animate-slide-down-fade-out"
+                      style={{ animationDelay: "0.1s" }}
+                    >
+                      {image.subtitle}
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -112,7 +156,7 @@ const HeroCarousel = () => {
         {carouselImages.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentSlide(index)}
+            onClick={() => changeSlide(index)}
             className={`h-2 rounded-full transition-all ${
               index === currentSlide ? "w-8 bg-primary" : "w-2 bg-muted-foreground/50"
             }`}
