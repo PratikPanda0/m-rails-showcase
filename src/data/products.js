@@ -430,7 +430,7 @@ export const products = [
   // Aluminium Handrails (MRH-01 to MRH-32)
   {
     id: "mrh-01",
-    name: "MRH-01 Aluminium Handrail",
+    name: "MRH-01 38MM Round",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "01",
@@ -441,7 +441,7 @@ export const products = [
   },
   {
     id: "mrh-02",
-    name: "MRH-02 Aluminium Handrail",
+    name: "MRH-02 50MM Round",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "02",
@@ -452,7 +452,7 @@ export const products = [
   },
   {
     id: "mrh-03",
-    name: "MRH-03 Aluminium Handrail",
+    name: "MRH-03 65MM Round",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "03",
@@ -463,7 +463,7 @@ export const products = [
   },
   {
     id: "mrh-04",
-    name: "MRH-04 Aluminium Handrail",
+    name: "MRH-04 25X25MM Square",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "04",
@@ -474,7 +474,7 @@ export const products = [
   },
   {
     id: "mrh-05",
-    name: "MRH-05 Aluminium Handrail",
+    name: "MRH-05 40X40MM Square",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "05",
@@ -485,7 +485,7 @@ export const products = [
   },
   {
     id: "mrh-06",
-    name: "MRH-06 Aluminium Handrail",
+    name: "MRH-06 50X50MM Square",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "06",
@@ -496,18 +496,18 @@ export const products = [
   },
   {
     id: "mrh-07",
-    name: "MRH-07 Aluminium Handrail",
+    name: "MRH-07 70X30MM 2 Side LED",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "07",
     price: "",
-    description: "Sleek aluminum handrail with minimalist design. Ideal for modern architectural styles.",
+    description: "Sleek aluminum handrail with 2-side LED lighting capability. Ideal for modern architectural styles.",
     image: "/images/products/Aluminium Handrails/MRH-07.jpg",
-    features: ["Minimalist Design", "Weather Resistant", "Premium Finish", "Easy Installation"]
+    features: ["LED Ready", "Weather Resistant", "Premium Finish", "Easy Installation"]
   },
   {
     id: "mrh-08",
-    name: "MRH-08 Aluminium Handrail",
+    name: "MRH-08 70X30MM Without LED",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "08",
@@ -518,18 +518,18 @@ export const products = [
   },
   {
     id: "mrh-09",
-    name: "MRH-09 Aluminium Handrail",
+    name: "MRH-09 35X40MM Commercial",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "09",
     price: "",
-    description: "Ergonomic aluminum handrail designed for maximum comfort. Premium grip surface for enhanced safety.",
+    description: "Commercial-grade aluminum handrail designed for maximum comfort. Premium grip surface for enhanced safety.",
     image: "/images/products/Aluminium Handrails/MRH-09.jpg",
     features: ["Ergonomic Grip", "Weather Resistant", "Premium Finish", "Enhanced Safety"]
   },
   {
     id: "mrh-10",
-    name: "MRH-10 Aluminium Handrail",
+    name: "MRH-10 50X40MM",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "10",
@@ -540,7 +540,7 @@ export const products = [
   },
   {
     id: "mrh-11",
-    name: "MRH-11 Aluminium Handrail",
+    name: "MRH-11 60X40MM",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "11",
@@ -551,7 +551,7 @@ export const products = [
   },
   {
     id: "mrh-12",
-    name: "MRH-12 Aluminium Handrail",
+    name: "MRH-12 71X35MM",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "12",
@@ -562,223 +562,223 @@ export const products = [
   },
   {
     id: "mrh-13",
-    name: "MRH-13 Aluminium Handrail",
+    name: "MRH-13 71X35MM LED",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "13",
     price: "",
-    description: "Commercial-grade aluminum handrail. Engineered for demanding environments with superior durability.",
+    description: "Commercial-grade aluminum handrail with LED lighting. Engineered for demanding environments with superior durability.",
     image: "/images/products/Aluminium Handrails/MRH-13.jpg",
-    features: ["Commercial Grade", "Weather Resistant", "Premium Finish", "High Durability"]
+    features: ["LED Ready", "Weather Resistant", "Premium Finish", "High Durability"]
   },
   {
     id: "mrh-14",
-    name: "MRH-14 Aluminium Handrail",
+    name: "MRH-14 Diamond",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "14",
     price: "",
-    description: "Architectural aluminum handrail with refined aesthetics. Premium choice for high-end projects.",
+    description: "Architectural aluminum handrail with diamond profile. Premium choice for high-end projects.",
     image: "/images/products/Aluminium Handrails/MRH-14.jpg",
     features: ["Architectural Grade", "Weather Resistant", "Multiple Finishes", "Premium Quality"]
   },
   {
     id: "mrh-15",
-    name: "MRH-15 Aluminium Handrail",
+    name: "MRH-15 EYES",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "15",
     price: "",
-    description: "Round profile aluminum handrail. Smooth circular design for comfortable grip and elegant appearance.",
+    description: "Round profile aluminum handrail with EYES design. Smooth circular design for comfortable grip and elegant appearance.",
     image: "/images/products/Aluminium Handrails/MRH-15.jpg",
     features: ["Round Profile", "Weather Resistant", "Premium Finish", "Comfortable Grip"]
   },
   {
     id: "mrh-16",
-    name: "MRH-16 Aluminium Handrail",
+    name: "MRH-16 Incline",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "16",
     price: "",
-    description: "Square profile aluminum handrail. Modern geometric design for contemporary architectural styles.",
+    description: "Incline profile aluminum handrail. Modern geometric design for contemporary architectural styles.",
     image: "/images/products/Aluminium Handrails/MRH-16.jpg",
-    features: ["Square Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"]
+    features: ["Incline Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"]
   },
   {
     id: "mrh-17",
-    name: "MRH-17 Aluminium Handrail",
+    name: "MRH-17 Incline LED",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "17",
     price: "",
-    description: "Oval profile aluminum handrail. Elegant curved design combining comfort with visual appeal.",
+    description: "Incline profile aluminum handrail with LED lighting. Elegant curved design combining comfort with visual appeal.",
     image: "/images/products/Aluminium Handrails/MRH-17.jpg",
-    features: ["Oval Profile", "Weather Resistant", "Premium Finish", "Elegant Design"]
+    features: ["LED Ready", "Weather Resistant", "Premium Finish", "Elegant Design"]
   },
   {
     id: "mrh-18",
-    name: "MRH-18 Aluminium Handrail",
+    name: "MRH-18 17x19MM Slim",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "18",
     price: "",
-    description: "Flat-top aluminum handrail design. Clean lines suitable for minimalist architectural concepts.",
+    description: "Slim aluminum handrail design. Clean lines suitable for minimalist architectural concepts.",
     image: "/images/products/Aluminium Handrails/MRH-18.jpg",
-    features: ["Flat-Top Design", "Weather Resistant", "Multiple Finishes", "Minimalist Style"]
+    features: ["Slim Design", "Weather Resistant", "Multiple Finishes", "Minimalist Style"]
   },
   {
     id: "mrh-19",
-    name: "MRH-19 Aluminium Handrail",
+    name: "MRH-19 56X30MM Small Rectangle",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "19",
     price: "",
-    description: "Contoured aluminum handrail with finger grooves. Enhanced grip design for superior safety.",
+    description: "Small rectangle aluminum handrail. Enhanced grip design for superior safety.",
     image: "/images/products/Aluminium Handrails/MRH-19.jpg",
     features: ["Contoured Grip", "Weather Resistant", "Premium Finish", "Enhanced Safety"]
   },
   {
     id: "mrh-20",
-    name: "MRH-20 Aluminium Handrail",
+    name: "MRH-20 68X45MM Oval",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "20",
     price: "",
-    description: "Large diameter aluminum handrail. Substantial profile for maximum visibility and grip area.",
+    description: "Oval profile aluminum handrail. Substantial profile for maximum visibility and grip area.",
     image: "/images/products/Aluminium Handrails/MRH-20.jpg",
-    features: ["Large Diameter", "Weather Resistant", "Multiple Finishes", "High Visibility"]
+    features: ["Oval Profile", "Weather Resistant", "Multiple Finishes", "High Visibility"]
   },
   {
     id: "mrh-21",
-    name: "MRH-21 Aluminium Handrail",
+    name: "MRH-21 Triangle",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "21",
     price: "",
-    description: "Slim profile aluminum handrail. Elegant thin design for refined aesthetic applications.",
+    description: "Triangle profile aluminum handrail. Elegant geometric design for refined aesthetic applications.",
     image: "/images/products/Aluminium Handrails/MRH-21.jpg",
-    features: ["Slim Profile", "Weather Resistant", "Premium Finish", "Refined Design"]
+    features: ["Triangle Profile", "Weather Resistant", "Premium Finish", "Refined Design"]
   },
   {
     id: "mrh-22",
-    name: "MRH-22 Aluminium Handrail",
+    name: "MRH-22 Crystal Diamond",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "22",
     price: "",
-    description: "Multi-grip aluminum handrail with varied surface textures. Versatile design for diverse user needs.",
+    description: "Crystal diamond profile aluminum handrail. Versatile design for diverse user needs.",
     image: "/images/products/Aluminium Handrails/MRH-22.jpg",
-    features: ["Multi-Grip", "Weather Resistant", "Multiple Finishes", "Versatile Design"]
+    features: ["Crystal Diamond", "Weather Resistant", "Multiple Finishes", "Versatile Design"]
   },
   {
     id: "mrh-23",
-    name: "MRH-23 Aluminium Handrail",
+    name: "MRH-23 Flower",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "23",
     price: "",
-    description: "Reinforced aluminum handrail for extra strength. Ideal for high-load applications and public spaces.",
+    description: "Flower design aluminum handrail. Ideal for decorative applications and public spaces.",
     image: "/images/products/Aluminium Handrails/MRH-23.jpg",
-    features: ["Reinforced Design", "Weather Resistant", "Premium Finish", "Extra Strength"]
+    features: ["Flower Design", "Weather Resistant", "Premium Finish", "Decorative"]
   },
   {
     id: "mrh-24",
-    name: "MRH-24 Aluminium Handrail",
+    name: "MRH-24 Capsule",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "24",
     price: "",
-    description: "LED-ready aluminum handrail with integrated channel. Modern design supporting ambient lighting.",
+    description: "Capsule profile aluminum handrail. Modern design supporting ambient lighting.",
     image: "/images/products/Aluminium Handrails/MRH-24.jpg",
-    features: ["LED Ready", "Weather Resistant", "Multiple Finishes", "Modern Design"]
+    features: ["Capsule Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"]
   },
   {
     id: "mrh-25",
-    name: "MRH-25 Aluminium Handrail",
+    name: "MRH-25 38X38MM Octagon",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "25",
     price: "",
-    description: "Textured surface aluminum handrail. Enhanced grip through surface treatment for improved safety.",
+    description: "Octagon profile aluminum handrail. Enhanced grip through octagonal design for improved safety.",
     image: "/images/products/Aluminium Handrails/MRH-25.jpg",
-    features: ["Textured Surface", "Weather Resistant", "Premium Finish", "Improved Grip"]
+    features: ["Octagon Profile", "Weather Resistant", "Premium Finish", "Improved Grip"]
   },
   {
     id: "mrh-26",
-    name: "MRH-26 Aluminium Handrail",
+    name: "MRH-26 45X45MM Octagon",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "26",
     price: "",
-    description: "Double-wall aluminum handrail construction. Enhanced structural integrity for demanding applications.",
+    description: "Large octagon profile aluminum handrail. Enhanced structural integrity for demanding applications.",
     image: "/images/products/Aluminium Handrails/MRH-26.jpg",
-    features: ["Double-Wall", "Weather Resistant", "Multiple Finishes", "Extra Durability"]
+    features: ["Octagon Profile", "Weather Resistant", "Multiple Finishes", "Extra Durability"]
   },
   {
     id: "mrh-27",
-    name: "MRH-27 Aluminium Handrail",
+    name: "MRH-27 38MM Round Plain",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "27",
     price: "",
-    description: "Curved profile aluminum handrail. Flowing organic design for contemporary architectural expressions.",
+    description: "Plain round profile aluminum handrail. Flowing organic design for contemporary architectural expressions.",
     image: "/images/products/Aluminium Handrails/MRH-27.jpg",
-    features: ["Curved Profile", "Weather Resistant", "Premium Finish", "Organic Design"]
+    features: ["Round Plain", "Weather Resistant", "Premium Finish", "Organic Design"]
   },
   {
     id: "mrh-28",
-    name: "MRH-28 Aluminium Handrail",
+    name: "MRH-28 50MM Round Plain",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "28",
     price: "",
-    description: "Ribbed aluminum handrail with longitudinal grooves. Distinctive pattern providing enhanced grip.",
+    description: "Large round plain aluminum handrail. Distinctive pattern providing enhanced grip.",
     image: "/images/products/Aluminium Handrails/MRH-28.jpg",
-    features: ["Ribbed Design", "Weather Resistant", "Multiple Finishes", "Enhanced Grip"]
+    features: ["Round Plain", "Weather Resistant", "Multiple Finishes", "Enhanced Grip"]
   },
   {
     id: "mrh-29",
-    name: "MRH-29 Aluminium Handrail",
+    name: "MRH-29 40X40MM Square Plain",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "29",
     price: "",
-    description: "Tapered aluminum handrail profile. Unique narrowing design for distinctive architectural statement.",
+    description: "Square plain profile aluminum handrail. Unique design for distinctive architectural statement.",
     image: "/images/products/Aluminium Handrails/MRH-29.jpg",
-    features: ["Tapered Profile", "Weather Resistant", "Premium Finish", "Unique Design"]
+    features: ["Square Plain", "Weather Resistant", "Premium Finish", "Unique Design"]
   },
   {
     id: "mrh-30",
-    name: "MRH-30 Aluminium Handrail",
+    name: "MRH-30 50X50MM Square Plain",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "30",
     price: "",
-    description: "Stepped aluminum handrail with multi-level surface. Provides varied grip options for different hand sizes.",
+    description: "Large square plain aluminum handrail. Provides varied grip options for different hand sizes.",
     image: "/images/products/Aluminium Handrails/MRH-30.jpg",
-    features: ["Stepped Design", "Weather Resistant", "Multiple Finishes", "Multi-Level Grip"]
+    features: ["Square Plain", "Weather Resistant", "Multiple Finishes", "Multi-Level Grip"]
   },
   {
     id: "mrh-31",
-    name: "MRH-31 Aluminium Handrail",
+    name: "MRH-31 38X38MM Octagon Plain",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "31",
     price: "",
-    description: "Hollow-core aluminum handrail for reduced weight. Maintains strength while offering lighter installation.",
+    description: "Octagon plain profile aluminum handrail. Maintains strength while offering lighter installation.",
     image: "/images/products/Aluminium Handrails/MRH-31.jpg",
-    features: ["Hollow-Core", "Weather Resistant", "Premium Finish", "Lightweight"]
+    features: ["Octagon Plain", "Weather Resistant", "Premium Finish", "Lightweight"]
   },
   {
     id: "mrh-32",
-    name: "MRH-32 Aluminium Handrail",
+    name: "MRH-32 45X45MM Octagon Plain",
     category: "Aluminium Handrails",
     subcategory: null,
     pageNumber: "32",
     price: "",
-    description: "Premium aluminum handrail with integrated mounting system. Complete solution for professional installations.",
+    description: "Large octagon plain aluminum handrail. Complete solution for professional installations.",
     image: "/images/products/Aluminium Handrails/MRH-32.jpg",
-    features: ["Integrated Mount", "Weather Resistant", "Multiple Finishes", "Complete System"]
+    features: ["Octagon Plain", "Weather Resistant", "Multiple Finishes", "Complete System"]
   },
 
   // Accessories (MRHA-01 to MRHA-10)
