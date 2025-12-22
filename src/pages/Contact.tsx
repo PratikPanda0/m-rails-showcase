@@ -157,7 +157,7 @@ const Contact = () => {
             {/* Google Map */}
             <div className="h-[500px] lg:h-auto min-h-[400px] rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5089574449373!2d70.74661307596472!3d22.27639794372825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb5e8f7b25a7%3A0x7f8d2e8d8f8d8e8d!2sVavdi%2C%20Rajkot%2C%20Gujarat%20360004!5e0!3m2!1sen!2sin!4v1702500000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5089574449373!2d70.796798!3d22.2329031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb5e8f7b25a7%3A0x7f8d2e8d8f8d8e8d!2sVavdi%2C%20Rajkot%2C%20Gujarat%20360004!5e0!3m2!1sen!2sin!4v1702500000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
