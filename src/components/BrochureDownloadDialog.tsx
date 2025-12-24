@@ -1,0 +1,162 @@
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Download } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const formSchema = z.object({
+  name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+});
+
+const BrochureDownloadDialog = () => {
+  const [open, setOpen] = useState(false);
+  const [step, setStep] = useState<"form" | "otp">("form");
+  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [otp, setOtp] = useState("");
+  const [generatedOtp, setGeneratedOtp] = useState("");
+  const [errors, setErrors] = useState<{ name?: string; email?: string; otp?: string }>({});
+  const { toast } = useToast();
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setErrors({});
+
+    const result = formSchema.safeParse(formData);
+    if (!result.success) {
+      const fieldErrors: { name?: string; email?: string } = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0] === "name") fieldErrors.name = err.message;
+        if (err.path[0] === "email") fieldErrors.email = err.message;
+      });
+      setErrors(fieldErrors);
+      return;
+    }
+
+    // Generate dummy OTP
+    const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
+    setGeneratedOtp(newOtp);
+    setStep("otp");
+    
+    toast({
+      title: "OTP Sent!",
+      description: `Demo OTP: ${newOtp} (In production, this would be sent to your email)`,
+    });
+  };
+
+  const handleOtpSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setErrors({});
+
+    if (otp !== generatedOtp) {
+      setErrors({ otp: "Invalid OTP. Please try again." });
+      return;
+    }
+
+    // Download the PDF
+    const link = document.createElement("a");
+    link.href = "/samplePDF.pdf";
+    link.download = "M-Rails-Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    toast({
+      title: "Success!",
+      description: "Your brochure download has started.",
+    });
+
+    // Reset and close
+    handleClose();
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setStep("form");
+    setFormData({ name: "", email: "" });
+    setOtp("");
+    setGeneratedOtp("");
+    setErrors({});
+  };
+
+  return (
+    <Dialog open={open} onOpenChange={(isOpen) => {
+      if (!isOpen) handleClose();
+      else setOpen(true);
+    }}>
+      <DialogTrigger asChild>
+        <Button variant="default" size="sm" className="gap-2">
+          <Download className="h-4 w-4" />
+          <span className="hidden sm:inline">Download Brochure</span>
+          <span className="sm:hidden">Brochure</span>
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle>
+            {step === "form" ? "Download Our Brochure" : "Verify Your Email"}
+          </DialogTitle>
+        </DialogHeader>
+
+        {step === "form" ? (
+          <form onSubmit={handleFormSubmit} className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="name">Full Name</Label>
+              <Input
+                id="name"
+                placeholder="Enter your name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              />
+              {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="email">Email Address</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              />
+              {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
+            </div>
+            <Button type="submit" className="w-full">
+              Send OTP
+            </Button>
+          </form>
+        ) : (
+          <form onSubmit={handleOtpSubmit} className="space-y-4">
+            <p className="text-sm text-muted-foreground">
+              We've sent a 6-digit OTP to <strong>{formData.email}</strong>
+            </p>
+            <div className="space-y-2">
+              <Label htmlFor="otp">Enter OTP</Label>
+              <Input
+                id="otp"
+                placeholder="Enter 6-digit OTP"
+                value={otp}
+                onChange={(e) => setOtp(e.target.value.replace(/\D/g, "").slice(0, 6))}
+                maxLength={6}
+              />
+              {errors.otp && <p className="text-sm text-destructive">{errors.otp}</p>}
+            </div>
+            <div className="flex gap-2">
+              <Button type="button" variant="outline" onClick={() => setStep("form")} className="flex-1">
+                Back
+              </Button>
+              <Button type="submit" className="flex-1">
+                Verify & Download
+              </Button>
+            </div>
+          </form>
+        )}
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+export default BrochureDownloadDialog;
