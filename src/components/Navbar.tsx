@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useCart } from "@/contexts/CartContext";
 import { useState } from "react";
+import BrochureDownloadDialog from "./BrochureDownloadDialog";
 
 const Navbar = () => {
-  const { getCartCount } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
@@ -40,18 +39,9 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Cart & Mobile Menu */}
+          {/* Brochure Download & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            {/* <Link to="/cart">
-              <Button variant="outline" size="icon" className="relative">
-                <ShoppingCart className="h-5 w-5" />
-                {getCartCount() > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                    {getCartCount()}
-                  </span>
-                )}
-              </Button>
-            </Link> */}
+            <BrochureDownloadDialog />
 
             {/* Mobile Menu Button */}
             <Button
