@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,6 +12,8 @@ const formSchema = z.object({
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
 });
 
+const RESEND_COOLDOWN = 30; // seconds
+
 const BrochureDownloadDialog = () => {
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState<"form" | "otp">("form");
@@ -19,7 +21,27 @@ const BrochureDownloadDialog = () => {
   const [otp, setOtp] = useState("");
   const [generatedOtp, setGeneratedOtp] = useState("");
   const [errors, setErrors] = useState<{ name?: string; email?: string; otp?: string }>({});
+  const [resendCountdown, setResendCountdown] = useState(0);
   const { toast } = useToast();
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (resendCountdown > 0) {
+      timer = setTimeout(() => setResendCountdown(resendCountdown - 1), 1000);
+    }
+    return () => clearTimeout(timer);
+  }, [resendCountdown]);
+
+  const sendOtp = () => {
+    const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
+    setGeneratedOtp(newOtp);
+    setResendCountdown(RESEND_COOLDOWN);
+    
+    toast({
+      title: "OTP Sent!",
+      description: `Demo OTP: ${newOtp} (In production, this would be sent to your email)`,
+    });
+  };
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,15 +58,14 @@ const BrochureDownloadDialog = () => {
       return;
     }
 
-    // Generate dummy OTP
-    const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
-    setGeneratedOtp(newOtp);
     setStep("otp");
-    
-    toast({
-      title: "OTP Sent!",
-      description: `Demo OTP: ${newOtp} (In production, this would be sent to your email)`,
-    });
+    sendOtp();
+  };
+
+  const handleResendOtp = () => {
+    if (resendCountdown > 0) return;
+    setOtp("");
+    sendOtp();
   };
 
   const handleOtpSubmit = (e: React.FormEvent) => {
@@ -80,6 +101,7 @@ const BrochureDownloadDialog = () => {
     setOtp("");
     setGeneratedOtp("");
     setErrors({});
+    setResendCountdown(0);
   };
 
   return (
@@ -143,6 +165,18 @@ const BrochureDownloadDialog = () => {
                 maxLength={6}
               />
               {errors.otp && <p className="text-sm text-destructive">{errors.otp}</p>}
+            </div>
+            <div className="flex items-center justify-between">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={handleResendOtp}
+                disabled={resendCountdown > 0}
+                className="text-sm"
+              >
+                {resendCountdown > 0 ? `Resend OTP in ${resendCountdown}s` : "Resend OTP"}
+              </Button>
             </div>
             <div className="flex gap-2">
               <Button type="button" variant="outline" onClick={() => setStep("form")} className="flex-1">
