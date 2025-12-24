@@ -7,9 +7,17 @@ export const products = [
     subcategory: "Bracket With Cover Systems",
     pageNumber: "01",
     price: "",
-    description: "Bracket & Cover System for Indoor & Outdoor Glass. Made from Aluminum Alloy 6063-T6. Features 100% recyclable, easy cleaning, maintenance free, weather proof, easy installation, and higher safety. Available in Natural, Anodized, Powder Coating, Wooden Coating, and PVDF Coating finishes.",
+    description:
+      "Bracket & Cover System for Indoor & Outdoor Glass. Made from Aluminum Alloy 6063-T6. Features 100% recyclable, easy cleaning, maintenance free, weather proof, easy installation, and higher safety. Available in Natural, Anodized, Powder Coating, Wooden Coating, and PVDF Coating finishes.",
     image: "/images/products/Aluminium Railing System/Bracket With Cover Systems/MRL-01.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
   {
     id: "mrl-02",
@@ -18,9 +26,17 @@ export const products = [
     subcategory: "Bracket With Cover Systems",
     pageNumber: "02",
     price: "",
-    description: "Modular Bracket & Cover System for Indoor & Outdoor applications. Aluminum Alloy 6063-T6 construction with EPDM gasket. Includes modular step bracket and cover options in 13 or 16 feet lengths.",
+    description:
+      "Modular Bracket & Cover System for Indoor & Outdoor applications. Aluminum Alloy 6063-T6 construction with EPDM gasket. Includes modular step bracket and cover options in 13 or 16 feet lengths.",
     image: "/images/products/Aluminium Railing System/Bracket With Cover Systems/MRL-02.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
   {
     id: "mrl-03",
@@ -29,9 +45,17 @@ export const products = [
     subcategory: "Bracket With Cover Systems",
     pageNumber: "03",
     price: "",
-    description: "Square Bracket & Cover System designed for both indoor and outdoor use. Features aluminum alloy construction with EPDM gasket and multiple finish options.",
+    description:
+      "Square Bracket & Cover System designed for both indoor and outdoor use. Features aluminum alloy construction with EPDM gasket and multiple finish options.",
     image: "/images/products/Aluminium Railing System/Bracket With Cover Systems/MRL-03.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
   {
     id: "mrl-04",
@@ -40,9 +64,17 @@ export const products = [
     subcategory: "Bracket With Cover Systems",
     pageNumber: "04",
     price: "",
-    description: "Heavy-duty Round Bracket & Cover System. Robust aluminum alloy construction suitable for demanding indoor and outdoor applications. Higher weight capacity and enhanced durability.",
+    description:
+      "Heavy-duty Round Bracket & Cover System. Robust aluminum alloy construction suitable for demanding indoor and outdoor applications. Higher weight capacity and enhanced durability.",
     image: "/images/products/Aluminium Railing System/Bracket With Cover Systems/MRL-04.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
   {
     id: "mrl-05",
@@ -51,9 +83,17 @@ export const products = [
     subcategory: "Bracket With Cover Systems",
     pageNumber: "05",
     price: "",
-    description: "Heavy Square Bracket & Cover System with enhanced load-bearing capacity. Premium aluminum alloy 6063-T6 with EPDM gasket for superior weather resistance.",
+    description:
+      "Heavy Square Bracket & Cover System with enhanced load-bearing capacity. Premium aluminum alloy 6063-T6 with EPDM gasket for superior weather resistance.",
     image: "/images/products/Aluminium Railing System/Bracket With Cover Systems/MRL-05.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
   {
     id: "mrl-06",
@@ -62,9 +102,17 @@ export const products = [
     subcategory: "Bracket With Cover Systems",
     pageNumber: "06",
     price: "",
-    description: "Ultra Heavy Bracket & Cover System for maximum durability. Ideal for high-traffic and demanding environments. Multiple finish options available.",
+    description:
+      "Ultra Heavy Bracket & Cover System for maximum durability. Ideal for high-traffic and demanding environments. Multiple finish options available.",
     image: "/images/products/Aluminium Railing System/Bracket With Cover Systems/MRL-06.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
 
   // Aluminium Railing System - Continuous Systems (MRL-07 to MRL-21)
@@ -75,9 +123,17 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "07",
     price: "",
-    description: "Continuous Profile System 40x30 for seamless railing installations. Available in 13 or 16 feet lengths with EPDM gasket. Perfect for indoor and outdoor applications.",
+    description:
+      "Continuous Profile System 40x30 for seamless railing installations. Available in 13 or 16 feet lengths with EPDM gasket. Perfect for indoor and outdoor applications.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-07.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation", "Higher Safety"]
+    features: [
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+      "Higher Safety",
+    ],
   },
   {
     id: "mrl-08",
@@ -86,9 +142,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "08",
     price: "",
-    description: "58x32 Continuous Channel Profile System. Enhanced dimensions for larger railing projects. Aluminum alloy 6063-T6 construction.",
+    description:
+      "58x32 Continuous Channel Profile System. Enhanced dimensions for larger railing projects. Aluminum alloy 6063-T6 construction.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-08.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"],
   },
   {
     id: "mrl-09",
@@ -97,9 +154,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "09",
     price: "",
-    description: "80x37 Continuous Channel for heavy-duty applications. Wider profile for increased strength and stability. Multiple finish options.",
+    description:
+      "80x37 Continuous Channel for heavy-duty applications. Wider profile for increased strength and stability. Multiple finish options.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-09.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"],
   },
   {
     id: "mrl-10",
@@ -108,9 +166,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "10",
     price: "",
-    description: "100x37 Continuous Channel Profile System. Extra-wide design for commercial and industrial applications requiring enhanced structural integrity.",
+    description:
+      "100x37 Continuous Channel Profile System. Extra-wide design for commercial and industrial applications requiring enhanced structural integrity.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-10.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"],
   },
   {
     id: "mrl-11",
@@ -119,9 +178,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "11",
     price: "",
-    description: "115x41 Continuous Channel for premium installations. Large profile dimensions suitable for architectural projects with high aesthetic and structural demands.",
+    description:
+      "115x41 Continuous Channel for premium installations. Large profile dimensions suitable for architectural projects with high aesthetic and structural demands.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-11.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"],
   },
   {
     id: "mrl-12",
@@ -130,9 +190,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "12",
     price: "",
-    description: "117x45 Continuous Channel System. Maximum dimensions for large-scale commercial projects. Superior strength and durability.",
+    description:
+      "117x45 Continuous Channel System. Maximum dimensions for large-scale commercial projects. Superior strength and durability.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-12.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"],
   },
   {
     id: "mrl-13",
@@ -141,9 +202,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "13",
     price: "",
-    description: "90x50 Continuous Channel Profile. Balanced dimensions for versatile applications. Available in all standard finish options.",
+    description:
+      "90x50 Continuous Channel Profile. Balanced dimensions for versatile applications. Available in all standard finish options.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-13.jpg",
-    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: ["100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"],
   },
   {
     id: "mrl-14",
@@ -152,9 +214,17 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "14",
     price: "",
-    description: "90x50 LED Continuous Channel with integrated LED lighting provision. Modern design combining functionality with ambient lighting capabilities.",
+    description:
+      "90x50 LED Continuous Channel with integrated LED lighting provision. Modern design combining functionality with ambient lighting capabilities.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-14.jpg",
-    features: ["LED Ready", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof", "Easy Installation"]
+    features: [
+      "LED Ready",
+      "100% Recyclable",
+      "Easy Cleaning",
+      "Maintenance Free",
+      "Weather Proof",
+      "Easy Installation",
+    ],
   },
   {
     id: "mrl-15",
@@ -163,9 +233,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "15",
     price: "",
-    description: "Commercial Grade Feri System for professional installations. Engineered for high-traffic commercial environments with superior durability.",
+    description:
+      "Commercial Grade Feri System for professional installations. Engineered for high-traffic commercial environments with superior durability.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-15.jpg",
-    features: ["Commercial Grade", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Commercial Grade", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
   {
     id: "mrl-16",
@@ -174,9 +245,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "16",
     price: "",
-    description: "Modular Feri System with flexible installation options. Adaptable design for various architectural requirements and configurations.",
+    description:
+      "Modular Feri System with flexible installation options. Adaptable design for various architectural requirements and configurations.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-16.jpg",
-    features: ["Modular Design", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Modular Design", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
   {
     id: "mrl-17",
@@ -185,9 +257,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "17",
     price: "",
-    description: "Triangle Feri with unique geometric design. Modern aesthetic appeal combined with structural efficiency.",
+    description:
+      "Triangle Feri with unique geometric design. Modern aesthetic appeal combined with structural efficiency.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-17.jpg",
-    features: ["Unique Design", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Unique Design", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
   {
     id: "mrl-18",
@@ -196,9 +269,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "18",
     price: "",
-    description: "Regular Feri for standard railing applications. Reliable and cost-effective solution for residential and light commercial use.",
+    description:
+      "Regular Feri for standard railing applications. Reliable and cost-effective solution for residential and light commercial use.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-18.jpg",
-    features: ["Standard Design", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Standard Design", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
   {
     id: "mrl-19",
@@ -207,9 +281,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "19",
     price: "",
-    description: "Clip Feri System with quick-installation mechanism. Time-saving installation with secure clip-on design.",
+    description:
+      "Clip Feri System with quick-installation mechanism. Time-saving installation with secure clip-on design.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-19.jpg",
-    features: ["Quick Install", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Quick Install", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
   {
     id: "mrl-20",
@@ -218,9 +293,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "20",
     price: "",
-    description: "120x60 Continuous Channel for large-scale projects. Extra-large profile dimensions for maximum strength and visual impact.",
+    description:
+      "120x60 Continuous Channel for large-scale projects. Extra-large profile dimensions for maximum strength and visual impact.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-20.jpg",
-    features: ["Large Profile", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Large Profile", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
   {
     id: "mrl-21",
@@ -229,9 +305,10 @@ export const products = [
     subcategory: "Continuous Systems",
     pageNumber: "21",
     price: "",
-    description: "125x70 Continuous Channel - the largest profile in the range. Premium solution for architectural masterpieces requiring maximum structural presence.",
+    description:
+      "125x70 Continuous Channel - the largest profile in the range. Premium solution for architectural masterpieces requiring maximum structural presence.",
     image: "/images/products/Aluminium Railing System/Continuous Systems/MRL-21.jpg",
-    features: ["Premium Profile", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"]
+    features: ["Premium Profile", "100% Recyclable", "Easy Cleaning", "Maintenance Free", "Weather Proof"],
   },
 
   // Aluminium Railing System - Bracket Systems (MRL-22 to MRL-29)
@@ -242,9 +319,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "22",
     price: "",
-    description: "L-Bracket for corner installations. Essential component for creating 90-degree railing configurations with clean, professional appearance.",
+    description:
+      "L-Bracket for corner installations. Essential component for creating 90-degree railing configurations with clean, professional appearance.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-22.jpg",
-    features: ["Corner Solution", "100% Recyclable", "Easy Installation", "Durable Construction"]
+    features: ["Corner Solution", "100% Recyclable", "Easy Installation", "Durable Construction"],
   },
   {
     id: "mrl-23",
@@ -253,9 +331,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "23",
     price: "",
-    description: "T-Bracket for junction installations. Allows for T-shaped railing configurations with structural integrity and aesthetic appeal.",
+    description:
+      "T-Bracket for junction installations. Allows for T-shaped railing configurations with structural integrity and aesthetic appeal.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-23.jpg",
-    features: ["Junction Solution", "100% Recyclable", "Easy Installation", "Durable Construction"]
+    features: ["Junction Solution", "100% Recyclable", "Easy Installation", "Durable Construction"],
   },
   {
     id: "mrl-24",
@@ -264,9 +343,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "24",
     price: "",
-    description: "Tower Bracket for vertical support applications. Engineered for enhanced vertical load-bearing in multi-level installations.",
+    description:
+      "Tower Bracket for vertical support applications. Engineered for enhanced vertical load-bearing in multi-level installations.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-24.jpg",
-    features: ["Vertical Support", "100% Recyclable", "High Strength", "Durable Construction"]
+    features: ["Vertical Support", "100% Recyclable", "High Strength", "Durable Construction"],
   },
   {
     id: "mrl-25",
@@ -275,9 +355,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "25",
     price: "",
-    description: "V-Bracket 100mm with wedge system. Provides angled support with secure wedge-based fastening mechanism.",
+    description:
+      "V-Bracket 100mm with wedge system. Provides angled support with secure wedge-based fastening mechanism.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-25.jpg",
-    features: ["Wedge System", "100% Recyclable", "Secure Fit", "Easy Adjustment"]
+    features: ["Wedge System", "100% Recyclable", "Secure Fit", "Easy Adjustment"],
   },
   {
     id: "mrl-26",
@@ -286,9 +367,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "26",
     price: "",
-    description: "V-Bracket 115mm with wedge system. Larger dimension for increased support capacity with reliable wedge fastening.",
+    description:
+      "V-Bracket 115mm with wedge system. Larger dimension for increased support capacity with reliable wedge fastening.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-26.jpg",
-    features: ["Wedge System", "100% Recyclable", "Secure Fit", "Easy Adjustment"]
+    features: ["Wedge System", "100% Recyclable", "Secure Fit", "Easy Adjustment"],
   },
   {
     id: "mrl-27",
@@ -297,9 +379,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "27",
     price: "",
-    description: "V-Bracket 100mm with grub screw system. Precision adjustment capability with secure grub screw fastening mechanism.",
+    description:
+      "V-Bracket 100mm with grub screw system. Precision adjustment capability with secure grub screw fastening mechanism.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-27.jpg",
-    features: ["Grub Screw System", "100% Recyclable", "Precision Fit", "Secure Fastening"]
+    features: ["Grub Screw System", "100% Recyclable", "Precision Fit", "Secure Fastening"],
   },
   {
     id: "mrl-28",
@@ -308,9 +391,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "28",
     price: "",
-    description: "V-Bracket 115mm with grub screw system. Enhanced size with precision grub screw adjustment for optimal installation.",
+    description:
+      "V-Bracket 115mm with grub screw system. Enhanced size with precision grub screw adjustment for optimal installation.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-28.jpg",
-    features: ["Grub Screw System", "100% Recyclable", "Precision Fit", "Secure Fastening"]
+    features: ["Grub Screw System", "100% Recyclable", "Precision Fit", "Secure Fastening"],
   },
   {
     id: "mrl-29",
@@ -319,9 +403,10 @@ export const products = [
     subcategory: "Bracket Systems",
     pageNumber: "29",
     price: "",
-    description: "Radius Bracket for curved railing installations. Specially designed for creating smooth curved sections in railing systems.",
+    description:
+      "Radius Bracket for curved railing installations. Specially designed for creating smooth curved sections in railing systems.",
     image: "/images/products/Aluminium Railing System/Bracket Systems/MRL-29.jpg",
-    features: ["Curved Design", "100% Recyclable", "Smooth Finish", "Architectural Grade"]
+    features: ["Curved Design", "100% Recyclable", "Smooth Finish", "Architectural Grade"],
   },
 
   // Railing Spigot (MRL-30 to MRL-32)
@@ -332,9 +417,10 @@ export const products = [
     subcategory: null,
     pageNumber: "30",
     price: "",
-    description: "50x36 Spigot available in big and small sizes. Versatile glass mounting solution for frameless glass railing systems with secure hold.",
+    description:
+      "50x36 Spigot available in big and small sizes. Versatile glass mounting solution for frameless glass railing systems with secure hold.",
     image: "/images/products/Railing Spigot/MRL-30 50x36 Spigot (Big-small).jpeg",
-    features: ["Dual Size Options", "Secure Glass Hold", "Weather Resistant", "Premium Finish"]
+    features: ["Dual Size Options", "Secure Glass Hold", "Weather Resistant", "Premium Finish"],
   },
   {
     id: "mrl-31",
@@ -343,9 +429,10 @@ export const products = [
     subcategory: null,
     pageNumber: "31",
     price: "",
-    description: "50mm Round Spigot in big and small variants. Elegant round profile for modern glass railing installations with superior aesthetics.",
+    description:
+      "50mm Round Spigot in big and small variants. Elegant round profile for modern glass railing installations with superior aesthetics.",
     image: "/images/products/Railing Spigot/MRL-31 50mm Round Spigot (Big-Small).jpg",
-    features: ["Round Profile", "Dual Size Options", "Modern Design", "Weather Resistant"]
+    features: ["Round Profile", "Dual Size Options", "Modern Design", "Weather Resistant"],
   },
   {
     id: "mrl-32",
@@ -354,9 +441,10 @@ export const products = [
     subcategory: null,
     pageNumber: "32",
     price: "",
-    description: "Hexagon Spigot with unique geometric design. Available in big and small sizes for distinctive architectural glass railing applications.",
+    description:
+      "Hexagon Spigot with unique geometric design. Available in big and small sizes for distinctive architectural glass railing applications.",
     image: "/images/products/Railing Spigot/MRL-32 Hexagon Spigot (Big-Small).jpg",
-    features: ["Hexagonal Design", "Dual Size Options", "Unique Aesthetic", "Premium Quality"]
+    features: ["Hexagonal Design", "Dual Size Options", "Unique Aesthetic", "Premium Quality"],
   },
 
   // Bracket (MRL-33 to MRL-38)
@@ -367,9 +455,10 @@ export const products = [
     subcategory: null,
     pageNumber: "33",
     price: "",
-    description: "Pyramid Bracket with distinctive pyramidal design. Combines structural strength with contemporary aesthetic appeal.",
+    description:
+      "Pyramid Bracket with distinctive pyramidal design. Combines structural strength with contemporary aesthetic appeal.",
     image: "/images/products/Bracket/MRL-33 Pyramid Bracket.jpg",
-    features: ["Pyramid Design", "Structural Strength", "Modern Look", "Premium Finish"]
+    features: ["Pyramid Design", "Structural Strength", "Modern Look", "Premium Finish"],
   },
   {
     id: "mrl-34",
@@ -378,9 +467,10 @@ export const products = [
     subcategory: null,
     pageNumber: "34",
     price: "",
-    description: "Diamond Bracket featuring elegant diamond profile. Available in big and small sizes for versatile installation requirements.",
+    description:
+      "Diamond Bracket featuring elegant diamond profile. Available in big and small sizes for versatile installation requirements.",
     image: "/images/products/Bracket/MRL-34 DIAMOND BRACKET.png",
-    features: ["Diamond Profile", "Dual Size Options", "Elegant Design", "Durable Construction"]
+    features: ["Diamond Profile", "Dual Size Options", "Elegant Design", "Durable Construction"],
   },
   {
     id: "mrl-35",
@@ -389,9 +479,10 @@ export const products = [
     subcategory: null,
     pageNumber: "35",
     price: "",
-    description: "Square F-Bracket for wall-mounted installations. Clean square profile with F-bracket functionality for secure mounting.",
+    description:
+      "Square F-Bracket for wall-mounted installations. Clean square profile with F-bracket functionality for secure mounting.",
     image: "/images/products/Bracket/MRL-35 Square F Bracket.png",
-    features: ["Square Profile", "Wall Mount", "Secure Fastening", "Clean Design"]
+    features: ["Square Profile", "Wall Mount", "Secure Fastening", "Clean Design"],
   },
   {
     id: "mrl-36",
@@ -400,9 +491,10 @@ export const products = [
     subcategory: null,
     pageNumber: "36",
     price: "",
-    description: "Round F-Bracket combining circular aesthetics with F-bracket functionality. Ideal for modern architectural applications.",
+    description:
+      "Round F-Bracket combining circular aesthetics with F-bracket functionality. Ideal for modern architectural applications.",
     image: "/images/products/Bracket/MRL- 36 Round F Bracket_.jpg",
-    features: ["Round Profile", "Wall Mount", "Modern Design", "Secure Fastening"]
+    features: ["Round Profile", "Wall Mount", "Modern Design", "Secure Fastening"],
   },
   {
     id: "mrl-37",
@@ -411,9 +503,10 @@ export const products = [
     subcategory: null,
     pageNumber: "37",
     price: "",
-    description: "Curve F-Bracket with flowing curved design. Adds elegant visual interest while providing reliable support.",
+    description:
+      "Curve F-Bracket with flowing curved design. Adds elegant visual interest while providing reliable support.",
     image: "/images/products/Bracket/MRL-37 Curve F Bracket.png",
-    features: ["Curved Design", "Wall Mount", "Elegant Aesthetics", "Reliable Support"]
+    features: ["Curved Design", "Wall Mount", "Elegant Aesthetics", "Reliable Support"],
   },
   {
     id: "mrl-38",
@@ -422,9 +515,10 @@ export const products = [
     subcategory: null,
     pageNumber: "38",
     price: "",
-    description: "Triangle F-Bracket with geometric triangular profile. Contemporary design element with strong structural characteristics.",
+    description:
+      "Triangle F-Bracket with geometric triangular profile. Contemporary design element with strong structural characteristics.",
     image: "/images/products/Bracket/MRL-38 Triangle F Bracket.png",
-    features: ["Triangle Profile", "Wall Mount", "Contemporary Design", "Strong Structure"]
+    features: ["Triangle Profile", "Wall Mount", "Contemporary Design", "Strong Structure"],
   },
 
   // Aluminium Handrails (MRH-01 to MRH-32)
@@ -435,9 +529,10 @@ export const products = [
     subcategory: null,
     pageNumber: "01",
     price: "",
-    description: "Premium aluminum handrail system. Designed for comfort and durability in both residential and commercial applications.",
+    description:
+      "Premium aluminum handrail system. Designed for comfort and durability in both residential and commercial applications.",
     image: "/images/products/Aluminium Handrails/MRH-01.jpg",
-    features: ["Ergonomic Design", "Weather Resistant", "Multiple Finishes", "Easy Installation"]
+    features: ["Ergonomic Design", "Weather Resistant", "Multiple Finishes", "Easy Installation"],
   },
   {
     id: "mrh-02",
@@ -446,9 +541,10 @@ export const products = [
     subcategory: null,
     pageNumber: "02",
     price: "",
-    description: "Aluminum handrail with enhanced grip profile. Suitable for indoor and outdoor use with various finish options.",
+    description:
+      "Aluminum handrail with enhanced grip profile. Suitable for indoor and outdoor use with various finish options.",
     image: "/images/products/Aluminium Handrails/MRH-02.jpg",
-    features: ["Enhanced Grip", "Weather Resistant", "Multiple Finishes", "Durable Construction"]
+    features: ["Enhanced Grip", "Weather Resistant", "Multiple Finishes", "Durable Construction"],
   },
   {
     id: "mrh-03",
@@ -457,9 +553,9 @@ export const products = [
     subcategory: null,
     pageNumber: "03",
     price: "",
-    description: "Versatile aluminum handrail for various applications. Premium quality construction with multiple finish options.",
+    description: "Versatile aluminum handrail for various applications. Premium quality with multiple finish options.",
     image: "/images/products/Aluminium Handrails/MRH-03.jpg",
-    features: ["Versatile Design", "Weather Resistant", "Multiple Finishes", "Easy Installation"]
+    features: ["Versatile Design", "Weather Resistant", "Multiple Finishes", "Easy Installation"],
   },
   {
     id: "mrh-04",
@@ -470,7 +566,7 @@ export const products = [
     price: "",
     description: "Modern aluminum handrail design. Combines aesthetics with functionality for contemporary spaces.",
     image: "/images/products/Aluminium Handrails/MRH-04.jpg",
-    features: ["Modern Design", "Weather Resistant", "Premium Finish", "Durable Construction"]
+    features: ["Modern Design", "Weather Resistant", "Premium Finish", "Durable Construction"],
   },
   {
     id: "mrh-05",
@@ -479,9 +575,10 @@ export const products = [
     subcategory: null,
     pageNumber: "05",
     price: "",
-    description: "Elegant aluminum handrail with refined profile. Perfect for upscale residential and commercial projects.",
+    description:
+      "Elegant aluminum handrail with refined profile. Perfect for upscale residential and commercial projects.",
     image: "/images/products/Aluminium Handrails/MRH-05.jpg",
-    features: ["Elegant Profile", "Weather Resistant", "Multiple Finishes", "Easy Installation"]
+    features: ["Elegant Profile", "Weather Resistant", "Multiple Finishes", "Easy Installation"],
   },
   {
     id: "mrh-06",
@@ -492,7 +589,7 @@ export const products = [
     price: "",
     description: "Robust aluminum handrail for heavy-duty applications. Enhanced durability for high-traffic areas.",
     image: "/images/products/Aluminium Handrails/MRH-06.jpg",
-    features: ["Heavy-Duty", "Weather Resistant", "Multiple Finishes", "High Durability"]
+    features: ["Heavy-Duty", "Weather Resistant", "Multiple Finishes", "High Durability"],
   },
   {
     id: "mrh-07",
@@ -503,7 +600,7 @@ export const products = [
     price: "",
     description: "Sleek aluminum handrail with 2-side LED lighting capability. Ideal for modern architectural styles.",
     image: "/images/products/Aluminium Handrails/MRH-07.jpg",
-    features: ["LED Ready", "Weather Resistant", "Premium Finish", "Easy Installation"]
+    features: ["LED Ready", "Weather Resistant", "Premium Finish", "Easy Installation"],
   },
   {
     id: "mrh-08",
@@ -512,9 +609,10 @@ export const products = [
     subcategory: null,
     pageNumber: "08",
     price: "",
-    description: "Classic aluminum handrail profile. Timeless design suitable for traditional and contemporary settings.",
+    description:
+      "Classic aluminum handrail profile. Timeless design suitable for traditional and contemporary settings.",
     image: "/images/products/Aluminium Handrails/MRH-08.jpg",
-    features: ["Classic Profile", "Weather Resistant", "Multiple Finishes", "Durable Construction"]
+    features: ["Classic Profile", "Weather Resistant", "Multiple Finishes", "Durable Construction"],
   },
   {
     id: "mrh-09",
@@ -523,9 +621,10 @@ export const products = [
     subcategory: null,
     pageNumber: "09",
     price: "",
-    description: "Commercial-grade aluminum handrail designed for maximum comfort. Premium grip surface for enhanced safety.",
+    description:
+      "Commercial-grade aluminum handrail designed for maximum comfort. Premium grip surface for enhanced safety.",
     image: "/images/products/Aluminium Handrails/MRH-09.jpg",
-    features: ["Ergonomic Grip", "Weather Resistant", "Premium Finish", "Enhanced Safety"]
+    features: ["Ergonomic Grip", "Weather Resistant", "Premium Finish", "Enhanced Safety"],
   },
   {
     id: "mrh-10",
@@ -536,7 +635,7 @@ export const products = [
     price: "",
     description: "Wide profile aluminum handrail. Provides substantial grip area for improved safety and comfort.",
     image: "/images/products/Aluminium Handrails/MRH-10.jpg",
-    features: ["Wide Profile", "Weather Resistant", "Multiple Finishes", "Easy Installation"]
+    features: ["Wide Profile", "Weather Resistant", "Multiple Finishes", "Easy Installation"],
   },
   {
     id: "mrh-11",
@@ -545,9 +644,10 @@ export const products = [
     subcategory: null,
     pageNumber: "11",
     price: "",
-    description: "Compact aluminum handrail for space-efficient installations. Perfect for narrow stairways and corridors.",
+    description:
+      "Compact aluminum handrail for space-efficient installations. Perfect for narrow stairways and corridors.",
     image: "/images/products/Aluminium Handrails/MRH-11.jpg",
-    features: ["Compact Design", "Weather Resistant", "Premium Finish", "Space Efficient"]
+    features: ["Compact Design", "Weather Resistant", "Premium Finish", "Space Efficient"],
   },
   {
     id: "mrh-12",
@@ -556,9 +656,10 @@ export const products = [
     subcategory: null,
     pageNumber: "12",
     price: "",
-    description: "Decorative aluminum handrail with unique profile. Adds visual interest while maintaining functionality.",
+    description:
+      "Decorative aluminum handrail with unique profile. Adds visual interest while maintaining functionality.",
     image: "/images/products/Aluminium Handrails/MRH-12.jpg",
-    features: ["Decorative Profile", "Weather Resistant", "Multiple Finishes", "Unique Design"]
+    features: ["Decorative Profile", "Weather Resistant", "Multiple Finishes", "Unique Design"],
   },
   {
     id: "mrh-13",
@@ -567,9 +668,10 @@ export const products = [
     subcategory: null,
     pageNumber: "13",
     price: "",
-    description: "Commercial-grade aluminum handrail with LED lighting. Engineered for demanding environments with superior durability.",
+    description:
+      "Commercial-grade aluminum handrail with LED lighting. Engineered for demanding environments with superior durability.",
     image: "/images/products/Aluminium Handrails/MRH-13.jpg",
-    features: ["LED Ready", "Weather Resistant", "Premium Finish", "High Durability"]
+    features: ["LED Ready", "Weather Resistant", "Premium Finish", "High Durability"],
   },
   {
     id: "mrh-14",
@@ -580,7 +682,7 @@ export const products = [
     price: "",
     description: "Architectural aluminum handrail with diamond profile. Premium choice for high-end projects.",
     image: "/images/products/Aluminium Handrails/MRH-14.jpg",
-    features: ["Architectural Grade", "Weather Resistant", "Multiple Finishes", "Premium Quality"]
+    features: ["Architectural Grade", "Weather Resistant", "Multiple Finishes", "Premium Quality"],
   },
   {
     id: "mrh-15",
@@ -589,9 +691,10 @@ export const products = [
     subcategory: null,
     pageNumber: "15",
     price: "",
-    description: "Round profile aluminum handrail with EYES design. Smooth circular design for comfortable grip and elegant appearance.",
+    description:
+      "Round profile aluminum handrail with EYES design. Smooth circular design for comfortable grip and elegant appearance.",
     image: "/images/products/Aluminium Handrails/MRH-15.jpg",
-    features: ["Round Profile", "Weather Resistant", "Premium Finish", "Comfortable Grip"]
+    features: ["Round Profile", "Weather Resistant", "Premium Finish", "Comfortable Grip"],
   },
   {
     id: "mrh-16",
@@ -602,7 +705,7 @@ export const products = [
     price: "",
     description: "Incline profile aluminum handrail. Modern geometric design for contemporary architectural styles.",
     image: "/images/products/Aluminium Handrails/MRH-16.jpg",
-    features: ["Incline Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"]
+    features: ["Incline Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"],
   },
   {
     id: "mrh-17",
@@ -611,9 +714,10 @@ export const products = [
     subcategory: null,
     pageNumber: "17",
     price: "",
-    description: "Incline profile aluminum handrail with LED lighting. Elegant curved design combining comfort with visual appeal.",
+    description:
+      "Incline profile aluminum handrail with LED lighting. Elegant curved design combining comfort with visual appeal.",
     image: "/images/products/Aluminium Handrails/MRH-17.jpg",
-    features: ["LED Ready", "Weather Resistant", "Premium Finish", "Elegant Design"]
+    features: ["LED Ready", "Weather Resistant", "Premium Finish", "Elegant Design"],
   },
   {
     id: "mrh-18",
@@ -624,7 +728,7 @@ export const products = [
     price: "",
     description: "Slim aluminum handrail design. Clean lines suitable for minimalist architectural concepts.",
     image: "/images/products/Aluminium Handrails/MRH-18.jpg",
-    features: ["Slim Design", "Weather Resistant", "Multiple Finishes", "Minimalist Style"]
+    features: ["Slim Design", "Weather Resistant", "Multiple Finishes", "Minimalist Style"],
   },
   {
     id: "mrh-19",
@@ -635,7 +739,7 @@ export const products = [
     price: "",
     description: "Small rectangle aluminum handrail. Enhanced grip design for superior safety.",
     image: "/images/products/Aluminium Handrails/MRH-19.jpg",
-    features: ["Contoured Grip", "Weather Resistant", "Premium Finish", "Enhanced Safety"]
+    features: ["Contoured Grip", "Weather Resistant", "Premium Finish", "Enhanced Safety"],
   },
   {
     id: "mrh-20",
@@ -646,7 +750,7 @@ export const products = [
     price: "",
     description: "Oval profile aluminum handrail. Substantial profile for maximum visibility and grip area.",
     image: "/images/products/Aluminium Handrails/MRH-20.jpg",
-    features: ["Oval Profile", "Weather Resistant", "Multiple Finishes", "High Visibility"]
+    features: ["Oval Profile", "Weather Resistant", "Multiple Finishes", "High Visibility"],
   },
   {
     id: "mrh-21",
@@ -657,7 +761,7 @@ export const products = [
     price: "",
     description: "Triangle profile aluminum handrail. Elegant geometric design for refined aesthetic applications.",
     image: "/images/products/Aluminium Handrails/MRH-21.jpg",
-    features: ["Triangle Profile", "Weather Resistant", "Premium Finish", "Refined Design"]
+    features: ["Triangle Profile", "Weather Resistant", "Premium Finish", "Refined Design"],
   },
   {
     id: "mrh-22",
@@ -668,7 +772,7 @@ export const products = [
     price: "",
     description: "Crystal diamond profile aluminum handrail. Versatile design for diverse user needs.",
     image: "/images/products/Aluminium Handrails/MRH-22.jpg",
-    features: ["Crystal Diamond", "Weather Resistant", "Multiple Finishes", "Versatile Design"]
+    features: ["Crystal Diamond", "Weather Resistant", "Multiple Finishes", "Versatile Design"],
   },
   {
     id: "mrh-23",
@@ -679,7 +783,7 @@ export const products = [
     price: "",
     description: "Flower design aluminum handrail. Ideal for decorative applications and public spaces.",
     image: "/images/products/Aluminium Handrails/MRH-23.jpg",
-    features: ["Flower Design", "Weather Resistant", "Premium Finish", "Decorative"]
+    features: ["Flower Design", "Weather Resistant", "Premium Finish", "Decorative"],
   },
   {
     id: "mrh-24",
@@ -690,7 +794,7 @@ export const products = [
     price: "",
     description: "Capsule profile aluminum handrail. Modern design supporting ambient lighting.",
     image: "/images/products/Aluminium Handrails/MRH-24.jpg",
-    features: ["Capsule Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"]
+    features: ["Capsule Profile", "Weather Resistant", "Multiple Finishes", "Modern Design"],
   },
   {
     id: "mrh-25",
@@ -701,7 +805,7 @@ export const products = [
     price: "",
     description: "Octagon profile aluminum handrail. Enhanced grip through octagonal design for improved safety.",
     image: "/images/products/Aluminium Handrails/MRH-25.jpg",
-    features: ["Octagon Profile", "Weather Resistant", "Premium Finish", "Improved Grip"]
+    features: ["Octagon Profile", "Weather Resistant", "Premium Finish", "Improved Grip"],
   },
   {
     id: "mrh-26",
@@ -712,7 +816,7 @@ export const products = [
     price: "",
     description: "Large octagon profile aluminum handrail. Enhanced structural integrity for demanding applications.",
     image: "/images/products/Aluminium Handrails/MRH-26.jpg",
-    features: ["Octagon Profile", "Weather Resistant", "Multiple Finishes", "Extra Durability"]
+    features: ["Octagon Profile", "Weather Resistant", "Multiple Finishes", "Extra Durability"],
   },
   {
     id: "mrh-27",
@@ -721,9 +825,10 @@ export const products = [
     subcategory: null,
     pageNumber: "27",
     price: "",
-    description: "Plain round profile aluminum handrail. Flowing organic design for contemporary architectural expressions.",
+    description:
+      "Plain round profile aluminum handrail. Flowing organic design for contemporary architectural expressions.",
     image: "/images/products/Aluminium Handrails/MRH-27.jpg",
-    features: ["Round Plain", "Weather Resistant", "Premium Finish", "Organic Design"]
+    features: ["Round Plain", "Weather Resistant", "Premium Finish", "Organic Design"],
   },
   {
     id: "mrh-28",
@@ -734,7 +839,7 @@ export const products = [
     price: "",
     description: "Large round plain aluminum handrail. Distinctive pattern providing enhanced grip.",
     image: "/images/products/Aluminium Handrails/MRH-28.jpg",
-    features: ["Round Plain", "Weather Resistant", "Multiple Finishes", "Enhanced Grip"]
+    features: ["Round Plain", "Weather Resistant", "Multiple Finishes", "Enhanced Grip"],
   },
   {
     id: "mrh-29",
@@ -745,7 +850,7 @@ export const products = [
     price: "",
     description: "Square plain profile aluminum handrail. Unique design for distinctive architectural statement.",
     image: "/images/products/Aluminium Handrails/MRH-29.jpg",
-    features: ["Square Plain", "Weather Resistant", "Premium Finish", "Unique Design"]
+    features: ["Square Plain", "Weather Resistant", "Premium Finish", "Unique Design"],
   },
   {
     id: "mrh-30",
@@ -756,7 +861,7 @@ export const products = [
     price: "",
     description: "Large square plain aluminum handrail. Provides varied grip options for different hand sizes.",
     image: "/images/products/Aluminium Handrails/MRH-30.jpg",
-    features: ["Square Plain", "Weather Resistant", "Multiple Finishes", "Multi-Level Grip"]
+    features: ["Square Plain", "Weather Resistant", "Multiple Finishes", "Multi-Level Grip"],
   },
   {
     id: "mrh-31",
@@ -767,7 +872,7 @@ export const products = [
     price: "",
     description: "Octagon plain profile aluminum handrail. Maintains strength while offering lighter installation.",
     image: "/images/products/Aluminium Handrails/MRH-31.jpg",
-    features: ["Octagon Plain", "Weather Resistant", "Premium Finish", "Lightweight"]
+    features: ["Octagon Plain", "Weather Resistant", "Premium Finish", "Lightweight"],
   },
   {
     id: "mrh-32",
@@ -778,7 +883,7 @@ export const products = [
     price: "",
     description: "Large octagon plain aluminum handrail. Complete solution for professional installations.",
     image: "/images/products/Aluminium Handrails/MRH-32.jpg",
-    features: ["Octagon Plain", "Weather Resistant", "Multiple Finishes", "Complete System"]
+    features: ["Octagon Plain", "Weather Resistant", "Multiple Finishes", "Complete System"],
   },
 
   // Accessories (MRHA-01 to MRHA-10)
@@ -791,7 +896,7 @@ export const products = [
     price: "",
     description: "Premium railing accessory for enhanced installation. Compatible with all M-RAILS railing systems.",
     image: "/images/products/Accessories/MRHA-01.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-02",
@@ -802,7 +907,7 @@ export const products = [
     price: "",
     description: "Essential railing accessory component. Designed for seamless integration with M-RAILS products.",
     image: "/images/products/Accessories/MRHA-02.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-03",
@@ -813,7 +918,7 @@ export const products = [
     price: "",
     description: "Functional railing accessory for complete installations. Ensures professional finish and durability.",
     image: "/images/products/Accessories/MRHA-03.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-04",
@@ -824,7 +929,7 @@ export const products = [
     price: "",
     description: "Quality railing accessory for enhanced system performance. Built for long-lasting reliability.",
     image: "/images/products/Accessories/MRHA-04.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-05",
@@ -833,9 +938,10 @@ export const products = [
     subcategory: null,
     pageNumber: "05",
     price: "",
-    description: "Specialized railing accessory for specific installation requirements. High-quality aluminum construction.",
+    description:
+      "Specialized railing accessory for specific installation requirements. High-quality aluminum construction.",
     image: "/images/products/Accessories/MRHA-05.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-06",
@@ -846,7 +952,7 @@ export const products = [
     price: "",
     description: "Versatile railing accessory component. Compatible with multiple railing system configurations.",
     image: "/images/products/Accessories/MRHA-06.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-07",
@@ -857,7 +963,7 @@ export const products = [
     price: "",
     description: "Professional-grade railing accessory. Engineered for optimal performance and aesthetics.",
     image: "/images/products/Accessories/MRHA-07.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-08",
@@ -868,7 +974,7 @@ export const products = [
     price: "",
     description: "Essential mounting accessory for railing systems. Ensures secure and stable installations.",
     image: "/images/products/Accessories/MRHA-08.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-09",
@@ -877,9 +983,10 @@ export const products = [
     subcategory: null,
     pageNumber: "09",
     price: "",
-    description: "Finishing accessory for railing installations. Provides clean and polished look to completed systems.",
+    description:
+      "Finishing accessory for railing installations. Provides clean and polished look to completed systems.",
     image: "/images/products/Accessories/MRHA-09.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
   },
   {
     id: "mrha-10",
@@ -890,6 +997,6 @@ export const products = [
     price: "",
     description: "Premium finishing accessory for complete railing solutions. Matches all M-RAILS finish options.",
     image: "/images/products/Accessories/MRHA-10_.jpg",
-    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"]
-  }
+    features: ["Universal Fit", "Premium Quality", "Easy Installation", "Durable"],
+  },
 ];

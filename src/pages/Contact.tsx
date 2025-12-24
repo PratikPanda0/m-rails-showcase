@@ -12,13 +12,42 @@ import { useCart } from "@/contexts/CartContext";
 const Contact = () => {
   const { cart } = useCart();
   const indianStates = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
-    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
-    "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
-    "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
-    "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
-    "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu",
-    "Delhi", "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry"
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal",
+    "Andaman and Nicobar Islands",
+    "Chandigarh",
+    "Dadra and Nagar Haveli and Daman and Diu",
+    "Delhi",
+    "Jammu and Kashmir",
+    "Ladakh",
+    "Lakshadweep",
+    "Puducherry",
   ];
 
   const [formData, setFormData] = useState({
@@ -28,12 +57,12 @@ const Contact = () => {
     state: "",
     phone: "",
     profession: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const submissionData = {
       formData: {
         firstName: formData.firstName,
@@ -42,14 +71,14 @@ const Contact = () => {
         state: formData.state,
         phone: formData.phone,
         profession: formData.profession,
-        message: formData.message
+        message: formData.message,
       },
       cartItems: cart,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
-    
+
     console.log("Contact Form Submission:", JSON.stringify(submissionData, null, 2));
-    
+
     toast.success("Message sent successfully!", {
       description: "We'll get back to you soon.",
     });
@@ -59,39 +88,37 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
   const handleSelectChange = (field: string, value: string) => {
     setFormData((prev) => ({
       ...prev,
-      [field]: value
+      [field]: value,
     }));
   };
 
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Banner */}
-      <div 
+      <div
         className="relative h-[400px] md:h-[500px] bg-cover bg-center"
         style={{ backgroundImage: "url('/images/Front/R-2.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide">
-            Contact Us
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide">Contact Us</h1>
         </div>
       </div>
 
       {/* Intro Section */}
       <div className="container mx-auto px-4 py-16 max-w-4xl text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-          M-RAILS Located...
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">M-RAILS Located...</h2>
         <p className="text-muted-foreground text-lg leading-relaxed">
-          Tell us about your project ideas or just say hello. Whether you've got a big idea or need some inspiration with a building project, we are here to create perfect railing solutions. From concept to creation, let us inspire you.
+          Tell us about your project ideas or just say hello. Whether you've got a big idea or need some inspiration
+          with a building project, we are here to create perfect railing solutions. From concept to creation, let us
+          inspire you.
         </p>
       </div>
 
@@ -112,6 +139,7 @@ const Contact = () => {
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Phone className="h-4 w-4 text-primary" />
                   <span>+91 942 724 8004</span>
+                  <span>+91 760 000 0775</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="h-4 w-4 text-primary" />
@@ -140,7 +168,12 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" />
-                  <a href="http://www.mrails.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <a
+                    href="http://www.mrails.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
                     www.mrails.in
                   </a>
                 </div>
@@ -218,7 +251,11 @@ const Contact = () => {
 
                     <div className="space-y-2">
                       <Label htmlFor="state">State *</Label>
-                      <Select value={formData.state} onValueChange={(value) => handleSelectChange("state", value)} required>
+                      <Select
+                        value={formData.state}
+                        onValueChange={(value) => handleSelectChange("state", value)}
+                        required
+                      >
                         <SelectTrigger className="bg-background">
                           <SelectValue placeholder="Select your state" />
                         </SelectTrigger>
@@ -249,7 +286,11 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="profession">Profession *</Label>
-                    <Select value={formData.profession} onValueChange={(value) => handleSelectChange("profession", value)} required>
+                    <Select
+                      value={formData.profession}
+                      onValueChange={(value) => handleSelectChange("profession", value)}
+                      required
+                    >
                       <SelectTrigger className="bg-background">
                         <SelectValue placeholder="Select your profession" />
                       </SelectTrigger>
@@ -275,9 +316,7 @@ const Contact = () => {
                       maxLength={180}
                       className="bg-background resize-none"
                     />
-                    <p className="text-xs text-muted-foreground text-right">
-                      {formData.message.length} / 180
-                    </p>
+                    <p className="text-xs text-muted-foreground text-right">{formData.message.length} / 180</p>
                   </div>
 
                   <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90">
