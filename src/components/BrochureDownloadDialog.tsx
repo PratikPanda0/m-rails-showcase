@@ -77,13 +77,8 @@ const BrochureDownloadDialog = () => {
       return;
     }
 
-    // Download the PDF
-    const link = document.createElement("a");
-    link.href = "/samplePDF.pdf";
-    link.download = "M-Rails-Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Download the PDF using window.open to avoid navigation issues
+    window.open("/samplePDF.pdf", "_blank");
 
     toast({
       title: "Success!",
