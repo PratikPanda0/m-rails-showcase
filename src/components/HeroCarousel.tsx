@@ -133,35 +133,37 @@ const HeroCarousel = () => {
         </div>
       ))}
 
-      {/* Navigation Arrows */}
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur"
-        onClick={goToPrevious}
-      >
-        <ChevronLeft className="h-6 w-6" />
-      </Button>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur"
-        onClick={goToNext}
-      >
-        <ChevronRight className="h-6 w-6" />
-      </Button>
-
-      {/* Dots */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
-        {carouselImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => changeSlide(index)}
-            className={`h-2 rounded-full transition-all ${
-              index === currentSlide ? "w-8 bg-primary" : "w-2 bg-muted-foreground/50"
-            }`}
-          />
-        ))}
+      {/* Navigation with Arrows and Dots */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
+        <Button
+          variant="outline"
+          size="icon"
+          className="h-8 w-8 bg-background/80 backdrop-blur"
+          onClick={goToPrevious}
+        >
+          <ChevronLeft className="h-4 w-4" />
+        </Button>
+        
+        <div className="flex space-x-2">
+          {carouselImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => changeSlide(index)}
+              className={`h-2 rounded-full transition-all ${
+                index === currentSlide ? "w-8 bg-primary" : "w-2 bg-muted-foreground/50"
+              }`}
+            />
+          ))}
+        </div>
+        
+        <Button
+          variant="outline"
+          size="icon"
+          className="h-8 w-8 bg-background/80 backdrop-blur"
+          onClick={goToNext}
+        >
+          <ChevronRight className="h-4 w-4" />
+        </Button>
       </div>
     </div>
   );
