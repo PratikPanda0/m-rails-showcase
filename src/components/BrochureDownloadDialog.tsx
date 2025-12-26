@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Download } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
@@ -14,8 +13,12 @@ const formSchema = z.object({
 
 const RESEND_COOLDOWN = 30; // seconds
 
-const BrochureDownloadDialog = () => {
-  const [open, setOpen] = useState(false);
+interface BrochureDownloadDialogProps {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}
+
+const BrochureDownloadDialog = ({ open, onOpenChange }: BrochureDownloadDialogProps) => {
   const [step, setStep] = useState<"form" | "otp">("form");
   const [formData, setFormData] = useState({ name: "", email: "" });
   const [otp, setOtp] = useState("");
@@ -95,7 +98,7 @@ const BrochureDownloadDialog = () => {
   };
 
   const handleClose = () => {
-    setOpen(false);
+    onOpenChange(false);
     setStep("form");
     setFormData({ name: "", email: "" });
     setOtp("");
@@ -107,15 +110,8 @@ const BrochureDownloadDialog = () => {
   return (
     <Dialog open={open} onOpenChange={(isOpen) => {
       if (!isOpen) handleClose();
-      else setOpen(true);
+      else onOpenChange(true);
     }}>
-      <DialogTrigger asChild>
-        <Button variant="default" size="sm" className="gap-2">
-          <Download className="h-4 w-4" />
-          <span className="hidden sm:inline">Download Brochure</span>
-          <span className="sm:hidden">Brochure</span>
-        </Button>
-      </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>

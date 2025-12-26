@@ -6,6 +6,7 @@ import BrochureDownloadDialog from "./BrochureDownloadDialog";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [brochureDialogOpen, setBrochureDialogOpen] = useState(false);
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -20,9 +21,6 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            {/* <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              M-RAILS
-            </div> */}
             <img className="logo" src="/M-RAILS-Logo.jpg" alt="M-Rails Logo" />
           </Link>
 
@@ -37,22 +35,23 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-          </div>
-
-          {/* Brochure Download & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <BrochureDownloadDialog />
-
-            {/* Mobile Menu Button */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            <button
+              onClick={() => setBrochureDialogOpen(true)}
+              className="text-foreground hover:text-primary transition-colors duration-200"
             >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
+              E-Brochure
+            </button>
           </div>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -68,9 +67,20 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            <button
+              onClick={() => {
+                setBrochureDialogOpen(true);
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+            >
+              E-Brochure
+            </button>
           </div>
         )}
       </div>
+
+      <BrochureDownloadDialog open={brochureDialogOpen} onOpenChange={setBrochureDialogOpen} />
     </nav>
   );
 };
