@@ -92,7 +92,7 @@ const HeroCarousel = () => {
               className="w-full h-full object-contain md:object-cover object-center"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+          
           <div className="relative h-full flex items-center">
             <div className="container mx-auto px-4">
               <div className="max-w-2xl space-y-4">
