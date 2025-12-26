@@ -20,7 +20,7 @@ const Index = () => {
     {
       icon: Award,
       title: "Premium Quality",
-      description: "Aluminum Alloy 6063-T6 construction"
+      description: "Aluminum Alloy 6063-T6"
     },
     {
       icon: Recycle,
