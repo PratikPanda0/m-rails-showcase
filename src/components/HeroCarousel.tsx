@@ -85,10 +85,13 @@ const HeroCarousel = () => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-muted"
-            style={{ backgroundImage: `url(${image.url})` }}
-          />
+          <div className="absolute inset-0 bg-muted">
+            <img 
+              src={image.url} 
+              alt={image.alt}
+              className="w-full h-full object-contain md:object-cover object-center"
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
           <div className="relative h-full flex items-center">
             <div className="container mx-auto px-4">
