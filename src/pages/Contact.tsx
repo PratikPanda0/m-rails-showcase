@@ -164,8 +164,10 @@ const Contact = () => {
               <div className="mt-4 space-y-2">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>+91 942 724 8004</span>
-                  <span>+91 760 000 0775</span>
+                  <div className="flex flex-col md:flex-row md:gap-2">
+                    <span>+91 760 000 0775</span>
+                    <span>+91 942 724 8004</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" />
