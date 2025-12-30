@@ -117,7 +117,7 @@ const BrochureDownloadDialog = ({ open, onOpenChange }: BrochureDownloadDialogPr
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>
-            {step === "form" ? "Download Our Brochure" : "Verify Your Email"}
+            {step === "form" ? "Download Brochure" : "Verify Your Email"}
           </DialogTitle>
         </DialogHeader>
 
