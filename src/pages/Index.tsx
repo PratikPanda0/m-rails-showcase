@@ -119,7 +119,7 @@ const Index = () => {
                 Contact Us
               </Button>
             </Link>
-            <a href="tel:+91XXXXXXXXXX">
+            <a href="tel:+917600000775">
               <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now

@@ -5,12 +5,12 @@ export interface Category {
 
 export const categories: Category[] = [
   {
-    name: "Aluminium Handrails",
-    subcategories: null
-  },
-  {
     name: "Aluminium Railing System",
     subcategories: ["Bracket Systems", "Bracket With Cover Systems", "Continuous Systems"]
+  },
+  {
+    name: "Aluminium Handrails",
+    subcategories: null
   },
   {
     name: "Bracket",
