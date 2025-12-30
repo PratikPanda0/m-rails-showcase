@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Mail, Phone, MapPin, Send, Building2, Factory } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Building2, Factory, Globe } from "lucide-react";
 import { toast } from "sonner";
 import { useCart } from "@/contexts/CartContext";
 
@@ -170,7 +170,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <MapPin className="h-4 w-4 text-primary" />
+                  <Globe className="h-4 w-4 text-primary" />
                   <a
                     href="http://www.mrails.in"
                     target="_blank"
